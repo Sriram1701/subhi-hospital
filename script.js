@@ -1,45 +1,50 @@
 // Data Arrays
 const departments = [
-    { name: "General Medicine", description: "Diagnosis and management of acute and chronic internal diseases.", icon: "fas fa-stethoscope" },
-    { name: "General & Laparoscopic Surgery", description: "Advanced minimally invasive, laparoscopic and trauma surgical procedures.", icon: "fas fa-procedures" },
-    { name: "Obstetrics & Gynaecology", description: "Complete maternal health, high-risk pregnancy care, and women's health.", icon: "fas fa-baby" },
-    { name: "Paediatrics", description: "Comprehensive child care, neonatal monitoring, and vaccination.", icon: "fas fa-child" },
-    { name: "Orthopaedics", description: "Bone, joint replacement, spine care, and sports injury management.", icon: "fas fa-bone" },
-    { name: "Neurology", description: "Expert management of stroke, epilepsy, neuropathy, and movement disorders.", icon: "fas fa-brain" },
-    { name: "Gastroenterology", description: "Advanced digestive tract care, endoscopy, and liver wellness.", icon: "fas fa-pills" },
-    { name: "ENT", description: "Diagnostic and surgical care for hearing, sinus, and throat disorders.", icon: "fas fa-ear-listen" },
-    { name: "Urology", description: "Kidney stone treatments, prostate care, and reconstructive urology.", icon: "fas fa-tint" },
-    { name: "Nephrology", description: "Kidney disease management, hypertension, and renal care.", icon: "fas fa-vial" },
-    { name: "Psychiatry", description: "Compassionate mental health evaluation, counselling, and therapy.", icon: "fas fa-user-md" },
-    { name: "Ophthalmology", description: "Eye care, vision testing, cataract evaluation, and eye surgery.", icon: "fas fa-eye" },
-    { name: "Oral & Maxillofacial Surgery", description: "Facial trauma, jaw alignment, reconstructive & dental surgery.", icon: "fas fa-tooth" }
+    { name: "General Medicine", description: "Diagnosis and management of acute and chronic internal diseases.", icon: "fas fa-stethoscope", tags: ["popular", "all"], badge: "24/7 Available" },
+    { name: "General & Laparoscopic Surgery", description: "Advanced minimally invasive, laparoscopic and trauma surgical procedures.", icon: "fas fa-procedures", tags: ["surgical", "popular", "all"], badge: "Advanced Care" },
+    { name: "Obstetrics & Gynaecology", description: "Complete maternal health, high-risk pregnancy care, and women's health.", icon: "fas fa-baby", tags: ["popular", "all"], badge: "24/7 Care" },
+    { name: "Paediatrics", description: "Comprehensive child care, neonatal monitoring, and vaccination.", icon: "fas fa-child", tags: ["popular", "all"], badge: "Specialized" },
+    { name: "Orthopaedics", description: "Bone, joint replacement, spine care, and sports injury management.", icon: "fas fa-bone", tags: ["surgical", "all"], badge: "5+ Specialists" },
+    { name: "Neurology", description: "Expert management of stroke, epilepsy, neuropathy, and movement disorders.", icon: "fas fa-brain", tags: ["all"], badge: "Advanced Care" },
+    { name: "Gastroenterology", description: "Advanced digestive tract care, endoscopy, and liver wellness.", icon: "fas fa-pills", tags: ["all"], badge: "Endoscopy" },
+    { name: "ENT", description: "Diagnostic and surgical care for hearing, sinus, and throat disorders.", icon: "fas fa-ear-listen", tags: ["surgical", "all"], badge: "Specialized" },
+    { name: "Urology", description: "Kidney stone treatments, prostate care, and reconstructive urology.", icon: "fas fa-tint", tags: ["surgical", "all"], badge: "Advanced Care" },
+    { name: "Nephrology", description: "Kidney disease management, hypertension, and renal care.", icon: "fas fa-vial", tags: ["all"], badge: "Dialysis Unit" },
+    { name: "Psychiatry", description: "Compassionate mental health evaluation, counselling, and therapy.", icon: "fas fa-user-md", tags: ["all"], badge: "Specialized" },
+    { name: "Ophthalmology", description: "Eye care, vision testing, cataract evaluation, and eye surgery.", icon: "fas fa-eye", tags: ["surgical", "all"], badge: "Specialized" },
+    { name: "Oral & Maxillofacial Surgery", description: "Facial trauma, jaw alignment, reconstructive & dental surgery.", icon: "fas fa-tooth", tags: ["surgical", "emergency", "all"], badge: "Emergency Care" },
+    { name: "Cardiology", description: "Comprehensive heart care, ECG, echocardiograms, and cardiac wellness.", icon: "fas fa-heartbeat", tags: ["emergency", "popular", "all"], badge: "24/7 Available" },
+    { name: "Pulmonology", description: "Diagnosis and advanced treatment for asthma, COPD, and lung diseases.", icon: "fas fa-lungs", tags: ["emergency", "all"], badge: "Specialized" },
+    { name: "Dermatology", description: "Expert care for skin, hair, and nail conditions, and cosmetic dermatology.", icon: "fas fa-allergies", tags: ["all"], badge: "Cosmetic Care" },
+    { name: "Anaesthesia", description: "Safe and advanced perioperative pain management and critical care support.", icon: "fas fa-syringe", tags: ["all"], badge: "24/7 Care" },
+    { name: "Neuro Surgery", description: "Precision surgical care for complex brain, spine, and nerve disorders.", icon: "fas fa-head-side-virus", tags: ["surgical", "emergency", "all"], badge: "Advanced Care" }
 ];
 
 const doctors = [
+    { name: "Dr. UMAAPATHY KNS", qualification: "MBBS", spec: "Clinical Director", dept: "Emergency", photo: "images/doctors/dr-umaapathy.jpg" },
     { name: "Dr. YAGNESHWARARAJA", qualification: "MBBS, MD", spec: "Senior Consultant - General Medicine", dept: "General Medicine", photo: "images/doctors/dr-yagneshwararaja.jpg" },
     { name: "Dr. PRAVEEN GANDHI", qualification: "MBBS, MD", spec: "Internal Medicine", dept: "General Medicine", photo: "images/doctors/dr-unknown-male.jpg" },
-    { name: "Dr. PRITHIVIRAJ", qualification: "MBBS, MS", spec: "General & Laparoscopic Surgeon", dept: "General Surgery", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. RAJAVEL", qualification: "MBBS, MS, FMAS, FIAGES", spec: "Minimal Access & Laparoscopic Surgeon", dept: "General Surgery", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. SUBHA SREE", qualification: "MBBS, MS", spec: "General and Laparoscopic Surgery", dept: "General Surgery", photo: "images/doctors/dr-subha-sree.jpg" },
-    { name: "Dr. VIJAY ANANAD THAMBAIAH", qualification: "MBBS, MS", spec: "Orthopaedic & Joint Replacement Surgeon", dept: "Orthopaedics", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. GOPALAMENON", qualification: "MBBS, DNB Ortho", spec: "Senior consultant Orthopaedics and Joint Replacement", dept: "Orthopaedics", photo: "images/doctors/dr-gopalamenan.jpeg" },
-    { name: "Dr. V. VINOTH KANNAN", qualification: "MBBS, MD, DM", spec: "Senior Consultant - Neurology", dept: "Neuro Medicine", photo: "images/doctors/dr-vinoth-kannan.jpg" },
-    { name: "Dr. SHANMUGAPATHY", qualification: "MBBS, MS, MCh", spec: "Neurosurgeon", dept: "Neuro Surgery", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. SANKAR SAMBASIVAM", qualification: "MBBS, MD, DM", spec: "Gastroenterologist & Hepatologist", dept: "Gastroenterology", photo: "images/doctors/dr-shankar-sambasivam.jpeg" },
-    { name: "Dr. VASUDEVAN T", qualification: "MBBS, MS, MCh", spec: "Urologist & Uro-Oncologist", dept: "Urology", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. PRITHIVIRAJ", qualification: "MBBS, MS", spec: "General & Laparoscopic Surgery", dept: "General Surgery", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. RAJAVEL", qualification: "MBBS, MS, FMAS, FIAGES", spec: "Minimal Access & Laparoscopic Surgery", dept: "General Surgery", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. SUBA SHREE", qualification: "MBBS, MS", spec: "General and Laparoscopic Surgery", dept: "General Surgery", photo: "images/doctors/dr-suba-shree.jpg" },
+    { name: "Dr. VIJAY ANANAD THAMBAIAH", qualification: "MBBS, MS", spec: "Orthopaedic & Joint Replacement Surgery", dept: "Orthopaedics", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. GOPALAMENON", qualification: "MBBS, DNB Ortho", spec: "Senior Consultant - Orthopaedics and Joint Replacement", dept: "Orthopaedics", photo: "images/doctors/dr-gopalamenan.jpeg" },
+    { name: "Dr. VINOTH KANNAN", qualification: "MBBS, MD, DM", spec: "Senior Consultant - Neurology", dept: "Neuro Medicine", photo: "images/doctors/dr-vinoth-kannan.jpg" },
+    { name: "Dr. SHANMUGAPATHY", qualification: "MBBS, MS, MCh", spec: "Neurosurgery", dept: "Neuro Surgery", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. SHANKAR SAMBASIVAM", qualification: "MBBS, MD, DM", spec: "Gastroenterology & Hepatology", dept: "Gastroenterology", photo: "images/doctors/dr-shankar-sambasivam.jpeg" },
+    { name: "Dr. VASUDEVAN T", qualification: "MBBS, MS, MCh", spec: "Urology & Uro-Oncology", dept: "Urology", photo: "images/doctors/placeholder-doctor.svg" },
     { name: "Dr. SUBHASRI", qualification: "MBBS, MS (OG)", spec: "Senior Consultant - Obstetrics and Gynaecology", dept: "Obstetrics & Gynaecology", photo: "images/doctors/dr-subhasri.jpg" },
-    { name: "Dr. SUGANYA CHAKARAVARTHY P", qualification: "MBBS, DGO", spec: "Obstetrician & Gynaecologist", dept: "Obstetrics & Gynaecology", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. SUGANYA CHAKARAVARTHY P", qualification: "MBBS, DGO", spec: "Obstetrics & Gynaecology", dept: "Obstetrics & Gynaecology", photo: "images/doctors/placeholder-doctor.svg" },
     { name: "Dr. JAYASUDHA", qualification: "MBBS, MD, DGO", spec: "Obstetrics & Gynaecology", dept: "Obstetrics & Gynaecology", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. ABINAYA JEYARAMAN", qualification: "MBBS, MD", spec: "Paediatrician & Child Health Specialist", dept: "Paediatrics", photo: "images/doctors/dr-unknown-female.jpg" },
-    { name: "Dr. UMAAPATHY KNS", qualification: "MBBS", spec: "Clinical Director", dept: "Emergency", photo: "images/doctors/dr-umaapathy.jpg" },
-    { name: "Dr. M. RAJESH", qualification: "MD, DNB", spec: "Cardiologist", dept: "Cardiology", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. RAMPRASATH V", qualification: "MBBS, MS", spec: "ENT Surgeon", dept: "ENT", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. J. SIVARANJINI", qualification: "MD (DVL)", spec: "Dermatologist & Venereologist", dept: "Dermatology", photo: "images/doctors/placeholder-doctor.svg" },
-    { name: "Dr. ELAYARAJA", qualification: "", spec: "Senior Consultant Nephrologist", dept: "Nephrology", photo: "images/doctors/dr-elayaraja.jpeg" },
-    { name: "Dr. MUTHUKKARUPPAN", qualification: "MBBS, MS", spec: "General and Laparoscopic surgeon", dept: "General Surgery", photo: "images/doctors/dr-muthukkaruppan.jpg" },
-    { name: "Dr. PAVITHARA", qualification: "", spec: "Consultant Paediatrics", dept: "Paediatrics", photo: "images/doctors/dr-pavithara.jpeg" },
-    { name: "Dr. SUGANTH", qualification: "", spec: "Senior Consultant Cardiologist", dept: "Cardiology", photo: "images/doctors/dr-suganth.jpeg" },
-    { name: "Dr. ANANDA KUMAR M", qualification: "MBBS, DPM, MD", spec: "Senior consultant Psychiatrist", dept: "Psychiatry", photo: "images/doctors/dr-anandha-kumar-m.jpeg" }
+    { name: "Dr. ABINAYA JEYARAMAN", qualification: "MBBS, MD", spec: "Paediatrics & Child Health", dept: "Paediatrics", photo: "images/doctors/dr-unknown-female.jpg" },
+    { name: "Dr. M. RAJESH", qualification: "MD, DNB", spec: "Cardiology", dept: "Cardiology", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. RAMPRASATH V", qualification: "MBBS, MS", spec: "ENT Surgery", dept: "ENT", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. J. SIVARANJINI", qualification: "MD (DVL)", spec: "Dermatology & Venereology", dept: "Dermatology", photo: "images/doctors/placeholder-doctor.svg" },
+    { name: "Dr. ELAIYARAJA", qualification: "", spec: "Senior Consultant - Nephrology", dept: "Nephrology", photo: "images/doctors/dr-elaiyaraja.jpeg" },
+    { name: "Dr. MUTHUKKARUPPAN", qualification: "MBBS, MS", spec: "General and Laparoscopic Surgery", dept: "General Surgery", photo: "images/doctors/dr-muthukkaruppan.jpg" },
+    { name: "Dr. PAVITHARA", qualification: "", spec: "Consultant - Paediatrics", dept: "Paediatrics", photo: "images/doctors/dr-pavithara.jpeg" },
+    { name: "Dr. SUGANTH", qualification: "", spec: "Senior Consultant - Cardiology", dept: "Cardiology", photo: "images/doctors/dr-suganth.jpeg" },
+    { name: "Dr. ANANDHA KUMAR M", qualification: "MBBS, DPM, MD", spec: "Senior Consultant - Psychiatry", dept: "Psychiatry", photo: "images/doctors/dr-anandha-kumar-m.jpeg" }
 ];
 
 const facilities = [
@@ -61,22 +66,15 @@ const testimonials = [
 ];
 
 const patientFeeds = [
-    "images/infrastructure/hospital-main-exterior.jpg",
-    "images/infrastructure/reception-area.jpg",
-    "images/infrastructure/pepper-one-building.jpg",
-    "images/infrastructure/pharmacy.jpg",
-    "images/infrastructure/advanced-lab.jpg",
-    "images/infrastructure/operation-theatre-setup.jpg",
-    "images/infrastructure/x-ray-room.jpg",
-    "images/infrastructure/icu-ventilator-beds.jpg"
-];
-
-const smileJourneyVideos = [
-    { title: "Smile Journey 1", thumbnail: "images/infrastructure/hospital-main-exterior.jpg" },
-    { title: "Expert Advice 1", thumbnail: "images/infrastructure/reception-area.jpg" },
-    { title: "Smile Journey 2", thumbnail: "images/infrastructure/pepper-one-building.jpg" },
-    { title: "Expert Advice 2", thumbnail: "images/infrastructure/operation-theatre-setup.jpg" },
-    { title: "Smile Journey 3", thumbnail: "images/infrastructure/nicu-warmer.jpg" }
+    "images/patients/photo-1.jpeg",
+    "images/patients/photo-2.jpeg",
+    "images/patients/photo-3.jpeg",
+    "images/patients/photo-4.jpeg",
+    "images/patients/photo-5.jpeg",
+    "images/patients/photo-6.jpeg",
+    "images/patients/photo-7.jpeg",
+    "images/patients/photo-8.jpeg",
+    "images/patients/photo-9.jpeg"
 ];
 
 const gallery = [
@@ -105,59 +103,40 @@ const videos = [
 ];
 
 const googleReviews = [
-    { name: "Arun Kumar", rating: 5, review: "Excellent hospital with good doctors and caring nurses. 24/7 emergency is very helpful." },
-    { name: "Priya Ramesh", rating: 5, review: "Clean environment and modern facilities. The pediatric department is very good." },
-    { name: "Murugan M", rating: 4, review: "Advanced laboratory services. Got my results very quickly. Highly recommended." },
-    { name: "Lakshmi S", rating: 5, review: "The maternity care was exceptional. Thanks to Dr. Suganya and the team." },
-    { name: "Suresh P", rating: 5, review: "Very professional staff in the ICU. They took great care of my father." },
-    { name: "Kavitha R", rating: 5, review: "Best multi-speciality hospital in Cuddalore. Experienced doctors." },
-    { name: "Dinesh K", rating: 4, review: "Pharmacy is open 24/7 which is a lifesaver. Good infrastructure." },
-    { name: "Saranya V", rating: 5, review: "My knee replacement surgery was successful. Excellent ortho team." },
-    { name: "Vignesh T", rating: 5, review: "Very good emergency response. The trauma team is highly skilled." },
-    { name: "Anitha M", rating: 5, review: "Affordable and premium healthcare. The rooms are very clean and hygienic." }
+    { name: "Arun Kumar", rating: 5, review: "Excellent facility in Cuddalore! The nursing staff is incredibly polite and the hospital is maintained very cleanly. Definitely recommend it." },
+    { name: "Pushpa", rating: 5, review: "My mother was admitted to the ICU, and the level of care she received was outstanding. The doctors were transparent about her condition at all times." },
+    { name: "Murugan M", rating: 4, review: "Got my lab tests done here. The results were delivered quickly, and the pharmacy being 24/7 is a huge plus for emergency needs." },
+    { name: "Ranjeetha Sri", rating: 5, review: "I recently visited Subhi Subhiksham Hospital for a general checkup. The doctors were very patient and explained everything clearly. Highly satisfied with the care provided." },
+    { name: "Suresh P", rating: 5, review: "One of the best multi-speciality hospitals I have seen. The infrastructure is top-notch, and the doctors are highly experienced and friendly." },
+    { name: "Kavitha R", rating: 5, review: "I had a great experience during my maternity stay. The doctors and nurses made sure I was comfortable throughout the process. A big thanks to the team!" },
+    { name: "Dinesh K", rating: 4, review: "Very good emergency response. We brought our uncle here late at night, and the trauma team handled the situation extremely well." },
+    { name: "Saranya V", rating: 5, review: "Affordable and premium healthcare. It is very hard to find such clean and hygienic hospital rooms. The entire staff was very supportive." }
 ];
 
 const infrastructureSlideshow = [
-    { title: "Advanced Laboratory", image: "images/infrastructure/advanced-lab.jpg" },
-    { title: "24/7 Emergency", image: "images/infrastructure/emergency-ward.jpg" },
-    { title: "Intensive Care Unit (ICU)", image: "images/infrastructure/icu-ventilator-beds.jpg" },
-    { title: "NICU", image: "images/infrastructure/nicu-warmer.jpg" },
-    { title: "Advanced Operation Theatre", image: "images/infrastructure/operation-theatre-setup.jpg" },
-    { title: "Hospital Exterior", image: "images/infrastructure/hospital-main-exterior.jpg" },
+    // Slide 1
+    { title: "Hospital Exterior", image: "images/infrastructure/hospital-main.jpg" },
+    { title: "Reception Desk", image: "images/infrastructure/reception-desk.jpg" },
+    { title: "Canteen Area", image: "images/infrastructure/canteen-area.jpg" },
     { title: "Reception & Waiting Area", image: "images/infrastructure/reception-area.jpg" },
-    { title: "Pepper One Block", image: "images/infrastructure/pepper-one-building.jpg" },
+    { title: "Doctor Visiting Ward", image: "images/infrastructure/doctor-visiting-ward.jpg" },
+    { title: "Inpatient Block", image: "images/infrastructure/inpatient-block.jpg" },
+
+    // Slide 2
     { title: "24/7 Pharmacy", image: "images/infrastructure/pharmacy.jpg" },
+    { title: "Emergency Ward", image: "images/infrastructure/emergency-ward.jpg" },
+    { title: "Emergency Beds", image: "images/infrastructure/emergency-ward-beds.jpg" },
     { title: "Digital X-Ray", image: "images/infrastructure/x-ray-room.jpg" },
-    { title: "Private Ward", image: "images/infrastructure/private-room-ward.jpg" },
-    { title: "Advanced Surgery", image: "images/infrastructure/operation-theatre-setup.jpg" },
-    { title: "Emergency Response", image: "images/infrastructure/emergency-ward.jpg" },
-    { title: "Our Facilities", image: "images/infrastructure/pharmacy.jpg" },
-    { title: "NICU Care", image: "images/infrastructure/nicu-warmer.jpg" },
-    { title: "Cardiology Unit", image: "images/infrastructure/icu-ventilator-beds.jpg" },
-    { title: "Maternity Ward", image: "images/infrastructure/private-room-ward.jpg" },
-    { title: "Health Awareness", image: "images/infrastructure/hospital-main-exterior.jpg" },
-    { title: "Community Health", image: "images/infrastructure/pepper-one-building.jpg" },
-    { title: "Advanced Operation Theatre", image: "images/infrastructure/operation-theatre-setup.jpg" },
-    { title: "24/7 Emergency", image: "images/infrastructure/emergency-ward.jpg" },
-    { title: "Intensive Care Unit (ICU)", image: "images/infrastructure/icu-ventilator-beds.jpg" },
-    { title: "NICU", image: "images/infrastructure/nicu-warmer.jpg" },
-    { title: "Advanced Laboratory", image: "images/infrastructure/advanced-lab.jpg" },
-    { title: "Hospital Exterior", image: "images/infrastructure/hospital-main-exterior.jpg" },
-    { title: "Reception & Waiting Area", image: "images/infrastructure/reception-area.jpg" },
-    { title: "Pepper One Block", image: "images/infrastructure/pepper-one-building.jpg" },
-    { title: "24/7 Pharmacy", image: "images/infrastructure/pharmacy.jpg" },
-    { title: "Digital X-Ray", image: "images/infrastructure/x-ray-room.jpg" },
-    { title: "Private Ward", image: "images/infrastructure/private-room-ward.jpg" },
-    { title: "Advanced Surgery", image: "images/infrastructure/operation-theatre-setup.jpg" },
-    { title: "Emergency Response", image: "images/infrastructure/emergency-ward.jpg" },
-    { title: "Our Facilities", image: "images/infrastructure/pharmacy.jpg" },
-    { title: "NICU Care", image: "images/infrastructure/nicu-warmer.jpg" },
-    { title: "Cardiology Unit", image: "images/infrastructure/icu-ventilator-beds.jpg" },
-    { title: "Maternity Ward", image: "images/infrastructure/private-room-ward.jpg" },
-    { title: "Advanced Operation Theatre", image: "images/infrastructure/operation-theatre-setup.jpg" },
-    { title: "24/7 Emergency", image: "images/infrastructure/emergency-ward.jpg" },
-    { title: "Intensive Care Unit (ICU)", image: "images/infrastructure/icu-ventilator-beds.jpg" },
-    { title: "NICU", image: "images/infrastructure/nicu-warmer.jpg" }
+    { title: "Advanced Lab", image: "images/infrastructure/advanced-lab.jpg" },
+    { title: "General Ward Beds", image: "images/infrastructure/general-ward-beds.jpg" },
+
+    // Slide 3
+    { title: "Advanced Operation Theatre", image: "images/infrastructure/operation-theatre-lights.jpg" },
+    { title: "O.T. C-Arm", image: "images/infrastructure/operation-theatre-c-arm.jpg" },
+    { title: "Anaesthesia Machine", image: "images/infrastructure/anaesthesia-machine.jpg" },
+    { title: "ICU Ventilator Beds", image: "images/infrastructure/icu-ventilator-beds.jpg" },
+    { title: "ICU Ward", image: "images/infrastructure/icu-ward.jpg" },
+    { title: "NICU Warmer", image: "images/infrastructure/nicu-warmer.jpg" }
 ];
 
 // Wait for DOM to load
@@ -167,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCarousels();
     initLightbox();
     initAutoScrollFeeds();
+    initAboutCarousel();
 });
 
 function populateData() {
@@ -175,10 +155,16 @@ function populateData() {
     if (deptContainer) {
         const deptHtml = departments.map((dept, index) => {
             const hiddenClass = index >= 8 ? 'hidden-service' : '';
+            const tagsAttr = dept.tags ? dept.tags.join(',') : 'all';
+            const badgeHtml = dept.badge ? `<div class="service-badge">${dept.badge}</div>` : '';
             return `
-            <div class="service-card ${hiddenClass}">
+            <div class="service-card ${hiddenClass}" data-tags="${tagsAttr}">
+                <i class="${dept.icon} service-watermark"></i>
                 <div class="service-icon-wrapper"><i class="${dept.icon}"></i></div>
                 <h3>${dept.name}</h3>
+                ${badgeHtml}
+                <p class="service-desc">${dept.description}</p>
+                <a href="#contact" class="service-cta">Know More <i class="fas fa-arrow-right"></i></a>
             </div>
             `;
         }).join('');
@@ -192,8 +178,8 @@ function populateData() {
             if (hiddenServices.length > 0) {
                 // Expand
                 hiddenServices.forEach(el => el.classList.remove('hidden-service'));
-                if(viewAllLink) viewAllLink.innerHTML = 'View Less Services <i class="fas fa-chevron-up"></i>';
-                
+                if (viewAllLink) viewAllLink.innerHTML = 'View Less Services <i class="fas fa-chevron-up"></i>';
+
                 // Auto scroll to the newly revealed items
                 if (allCards.length > 8) {
                     // Small delay to allow layout to settle before scrolling
@@ -206,7 +192,7 @@ function populateData() {
                 allCards.forEach((el, index) => {
                     if (index >= 8) el.classList.add('hidden-service');
                 });
-                if(viewAllLink) viewAllLink.innerHTML = 'View All Services <i class="fas fa-chevron-down"></i>';
+                if (viewAllLink) viewAllLink.innerHTML = 'View All Services <i class="fas fa-chevron-down"></i>';
                 document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
             }
         };
@@ -218,7 +204,7 @@ function populateData() {
             searchInput.addEventListener('input', (e) => {
                 const query = e.target.value.toLowerCase();
                 const allCards = deptContainer.querySelectorAll('.service-card');
-                
+
                 if (query.trim() === '') {
                     // Reset
                     allCards.forEach((el, index) => {
@@ -231,7 +217,7 @@ function populateData() {
                             el.classList.remove('hidden-service');
                         }
                     });
-                    if(viewAllLink) viewAllLink.style.display = 'inline-block';
+                    if (viewAllLink) viewAllLink.style.display = 'inline-block';
                 } else {
                     // Filter
                     allCards.forEach(el => {
@@ -243,8 +229,53 @@ function populateData() {
                             el.style.display = 'none';
                         }
                     });
-                    if(viewAllLink) viewAllLink.style.display = 'none';
+                    if (viewAllLink) viewAllLink.style.display = 'none';
                 }
+
+                // Reset filter tags visual state
+                const filterTags = document.querySelectorAll('.filter-tag');
+                filterTags.forEach(t => t.classList.remove('active'));
+                if (filterTags[0]) filterTags[0].classList.add('active');
+            });
+        }
+
+        const filterTags = document.querySelectorAll('.filter-tag');
+        if (filterTags.length > 0) {
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', () => {
+                    // Remove active from all tags
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    // Add active to clicked tag
+                    tag.classList.add('active');
+
+                    if (searchInput) searchInput.value = ''; // clear search when using filters
+
+                    const filterValue = tag.getAttribute('data-filter');
+                    const allCards = deptContainer.querySelectorAll('.service-card');
+
+                    allCards.forEach(el => {
+                        const cardTags = el.getAttribute('data-tags') || '';
+                        if (filterValue === 'all') {
+                            el.style.display = '';
+                            // Restore original hidden state for pagination
+                            const isHidden = Array.from(allCards).indexOf(el) >= 8;
+                            if (isHidden && viewAllLink && viewAllLink.innerHTML.includes('View All')) {
+                                el.classList.add('hidden-service');
+                            }
+                        } else {
+                            if (cardTags.includes(filterValue)) {
+                                el.style.display = '';
+                                el.classList.remove('hidden-service');
+                            } else {
+                                el.style.display = 'none';
+                            }
+                        }
+                    });
+
+                    if (viewAllLink) {
+                        viewAllLink.style.display = filterValue === 'all' ? 'inline-block' : 'none';
+                    }
+                });
             });
         }
     }
@@ -253,16 +284,16 @@ function populateData() {
     const docsContainer = document.getElementById('doctors-grid');
     const doctorSearchInput = document.getElementById('doctor-search-input');
     const viewAllDocsBtn = document.getElementById('view-all-doctors-btn');
-    
+
     if (docsContainer) {
         let showAllDoctors = false;
-        
+
         const renderDoctors = (searchTerm = "") => {
             // 1. Filter out placeholders and apply search term
             let filteredDocs = doctors.filter(doc => {
                 const hasValidPhoto = !doc.photo.includes("placeholder") && !doc.photo.includes("unknown");
-                const matchesSearch = doc.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                                      doc.spec.toLowerCase().includes(searchTerm.toLowerCase());
+                const matchesSearch = doc.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    doc.spec.toLowerCase().includes(searchTerm.toLowerCase());
                 return hasValidPhoto && matchesSearch;
             });
 
@@ -271,17 +302,17 @@ function populateData() {
                 const getPriority = (doc) => {
                     const name = doc.name.toUpperCase();
                     const spec = doc.spec.toUpperCase();
-                    // 1st Priority: Clinic Director
-                    if (name.includes("UMAAPATHY") || spec.includes("DIRECTOR")) return 1;
-                    // 2nd Priority: Senior Doctors
-                    if (spec.includes("SENIOR")) return 2;
-                    // 3rd Priority: Others
-                    return 3;
+                    // Custom Order
+                    if (name.includes("UMAAPATHY")) return 1;
+                    // Senior Doctors
+                    if (spec.includes("SENIOR")) return 4;
+                    // Others
+                    return 5;
                 };
                 return getPriority(a) - getPriority(b);
             });
 
-            // 3. Limit to 8 if not showing all
+            // 3. Limit to 8 if not showing all (for 4x2 grid)
             const displayLimit = 8;
             const displayedDocs = showAllDoctors ? filteredDocs : filteredDocs.slice(0, displayLimit);
 
@@ -291,8 +322,8 @@ function populateData() {
                     viewAllDocsBtn.style.display = 'none';
                 } else {
                     viewAllDocsBtn.style.display = 'inline-block';
-                    viewAllDocsBtn.innerHTML = showAllDoctors 
-                        ? 'View Less <i class="fas fa-chevron-up"></i>' 
+                    viewAllDocsBtn.innerHTML = showAllDoctors
+                        ? 'View Less <i class="fas fa-chevron-up"></i>'
                         : 'View All Doctors <i class="fas fa-chevron-down"></i>';
                 }
             }
@@ -300,7 +331,7 @@ function populateData() {
             // Render HTML
             if (displayedDocs.length === 0) {
                 docsContainer.innerHTML = '<p style="text-align: center; width: 100%; grid-column: 1 / -1; color: var(--text-light); padding: 40px;">No doctors found matching your criteria.</p>';
-                docsContainer.style.display = 'block'; 
+                docsContainer.style.display = 'block';
             } else {
                 docsContainer.style.display = ''; // Revert to stylesheet default (grid)
                 docsContainer.innerHTML = displayedDocs.map((doc) => `
@@ -310,7 +341,8 @@ function populateData() {
                         </div>
                         <div class="doctor-info">
                             <h4>${doc.name}</h4>
-                            <p style="color: var(--primary-color); font-weight: 500;">${doc.spec}</p>
+                            <p class="doc-specialty" style="color: var(--primary-color); font-weight: 600; margin-bottom: 15px;">${doc.spec}</p>
+                            <button onclick="openAppointmentModal('${doc.name}')" class="btn btn-outline-primary" style="width: 100%; padding: 10px 0; font-size: 0.9rem;">Book Appointment</button>
                         </div>
                     </div>
                 `).join('');
@@ -326,7 +358,7 @@ function populateData() {
                 renderDoctors(e.target.value);
             });
         }
-        
+
         if (viewAllDocsBtn) {
             viewAllDocsBtn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -339,16 +371,16 @@ function populateData() {
     // Populate Gallery with Filters and Grid
     const galleryFilters = document.getElementById('gallery-filters');
     const galleryGrid = document.getElementById('gallery-grid');
-    
+
     if (galleryFilters && galleryGrid && gallery) {
         // Extract unique categories
         const categories = ['All', ...new Set(gallery.map(item => item.category))];
-        
+
         // Render Filters
-        galleryFilters.innerHTML = categories.map(cat => 
+        galleryFilters.innerHTML = categories.map(cat =>
             `<button class="filter-btn ${cat === 'All' ? 'active' : ''}" data-filter="${cat}">${cat}</button>`
         ).join('');
-        
+
         // State for Lightbox
         window.currentFilteredGallery = [...gallery];
 
@@ -359,7 +391,7 @@ function populateData() {
                 filtered = gallery.filter(item => item.category === filterCat);
             }
             window.currentFilteredGallery = filtered;
-            
+
             galleryGrid.innerHTML = filtered.map((item, index) => `
                 <div class="gallery-item" data-index="${index}">
                     <img src="${item.image}" alt="${item.title}" loading="lazy">
@@ -372,7 +404,7 @@ function populateData() {
                     </div>
                 </div>
             `).join('');
-            
+
             // Re-attach lightbox listeners
             document.querySelectorAll('.gallery-item').forEach(item => {
                 item.addEventListener('click', (e) => {
@@ -380,9 +412,9 @@ function populateData() {
                 });
             });
         };
-        
+
         renderGallery('All');
-        
+
         // Filter Click Events
         galleryFilters.addEventListener('click', (e) => {
             if (e.target.classList.contains('filter-btn')) {
@@ -392,7 +424,7 @@ function populateData() {
             }
         });
     }
-    
+
     // Populate Videos
     const videosContainer = document.getElementById('videos-track');
     if (videosContainer && videos) {
@@ -409,7 +441,7 @@ function populateData() {
         `).join('');
         videosContainer.innerHTML = videosHtml;
     }
-    
+
     // Populate Patient Feeds
     const patientFeedsContainer = document.getElementById('patient-feeds-track');
     if (patientFeedsContainer && patientFeeds) {
@@ -422,19 +454,6 @@ function populateData() {
         patientFeedsContainer.innerHTML = feedsHtml;
     }
 
-    // Populate Smile Journey Videos
-    const smileJourneyContainer = document.getElementById('smile-journey-track');
-    if (smileJourneyContainer && smileJourneyVideos) {
-        const duplicatedVideos = [...smileJourneyVideos, ...smileJourneyVideos]; // Duplicate for marquee
-        const journeyHtml = duplicatedVideos.map(video => `
-            <div class="feed-item-video">
-                <img src="${video.thumbnail}" alt="${video.title}">
-                <div class="feed-play-btn"><i class="fas fa-play"></i></div>
-            </div>
-        `).join('');
-        smileJourneyContainer.innerHTML = journeyHtml;
-    }
-    
     // Populate Google Reviews
     const revContainer = document.getElementById('reviews-track');
     if (revContainer && googleReviews) {
@@ -460,7 +479,7 @@ function populateData() {
     if (infraContainer && infrastructureSlideshow) {
         const photos = infrastructureSlideshow;
         let infraHtml = '';
-        
+
         for (let i = 0; i < photos.length; i += 6) {
             const batch = photos.slice(i, i + 6);
             if (batch.length === 6) {
@@ -507,7 +526,7 @@ function initNavigation() {
         hamburgerBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-        
+
         // Close menu when clicking a link
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
@@ -536,26 +555,26 @@ function setupCarousel(containerSelector, trackSelector, dotsSelector, autoPlay 
     const container = document.querySelector(containerSelector);
     const track = document.querySelector(trackSelector);
     const dotsContainer = document.querySelector(dotsSelector);
-    
+
     if (!container || !track || !dotsContainer) return;
-    
+
     const prevBtn = container.querySelector('.prev-btn');
     const nextBtn = container.querySelector('.next-btn');
-    
+
     let slideWidth = 0;
-    
+
     setTimeout(() => {
         const firstSlide = track.firstElementChild;
-        if(firstSlide) slideWidth = firstSlide.offsetWidth + 24; // width + gap
-        
+        if (firstSlide) slideWidth = firstSlide.offsetWidth + 24; // width + gap
+
         const slideCount = track.children.length;
         dotsContainer.innerHTML = '';
-        for(let i=0; i < slideCount; i++) {
+        for (let i = 0; i < slideCount; i++) {
             const dot = document.createElement('div');
             dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
             dot.addEventListener('click', () => {
                 const newFirst = track.firstElementChild;
-                if(newFirst) slideWidth = newFirst.offsetWidth + 24;
+                if (newFirst) slideWidth = newFirst.offsetWidth + 24;
                 track.scrollTo({ left: slideWidth * i, behavior: 'smooth' });
             });
             dotsContainer.appendChild(dot);
@@ -565,25 +584,25 @@ function setupCarousel(containerSelector, trackSelector, dotsSelector, autoPlay 
     if (prevBtn) {
         prevBtn.addEventListener('click', () => {
             const firstSlide = track.firstElementChild;
-            if(firstSlide) slideWidth = firstSlide.offsetWidth + 24;
+            if (firstSlide) slideWidth = firstSlide.offsetWidth + 24;
             track.scrollBy({ left: -slideWidth, behavior: 'smooth' });
         });
     }
-    
+
     if (nextBtn) {
         nextBtn.addEventListener('click', () => {
             const firstSlide = track.firstElementChild;
-            if(firstSlide) slideWidth = firstSlide.offsetWidth + 24;
+            if (firstSlide) slideWidth = firstSlide.offsetWidth + 24;
             track.scrollBy({ left: slideWidth, behavior: 'smooth' });
         });
     }
-    
+
     track.addEventListener('scroll', () => {
         const firstSlide = track.firstElementChild;
-        if(!firstSlide) return;
+        if (!firstSlide) return;
         slideWidth = firstSlide.offsetWidth + 24;
         const index = Math.round(track.scrollLeft / slideWidth);
-        
+
         const dots = dotsContainer.querySelectorAll('.carousel-dot');
         dots.forEach((dot, i) => {
             dot.classList.toggle('active', i === index);
@@ -598,9 +617,9 @@ function setupCarousel(containerSelector, trackSelector, dotsSelector, autoPlay 
         setInterval(() => {
             if (isHovered) return;
             const firstSlide = track.firstElementChild;
-            if(!firstSlide) return;
+            if (!firstSlide) return;
             const currentSlideWidth = firstSlide.offsetWidth + 24;
-            
+
             if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 10) {
                 track.scrollTo({ left: 0, behavior: 'smooth' });
             } else {
@@ -610,22 +629,22 @@ function setupCarousel(containerSelector, trackSelector, dotsSelector, autoPlay 
     }
 }
 
-window.openLightbox = function(index) {
+window.openLightbox = function (index) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const currentSpan = document.getElementById('lightbox-current');
     const totalSpan = document.getElementById('lightbox-total');
-    
-    if(!lightbox || !window.currentFilteredGallery) return;
-    
+
+    if (!lightbox || !window.currentFilteredGallery) return;
+
     window.currentLightboxIndex = index;
     totalSpan.textContent = window.currentFilteredGallery.length;
-    
-    if(window.currentFilteredGallery[window.currentLightboxIndex]) {
+
+    if (window.currentFilteredGallery[window.currentLightboxIndex]) {
         lightboxImg.src = window.currentFilteredGallery[window.currentLightboxIndex].image;
         currentSpan.textContent = window.currentLightboxIndex + 1;
     }
-    
+
     lightbox.classList.add('active');
 };
 
@@ -640,55 +659,61 @@ function initLightbox() {
     if (!lightbox) return;
 
     function updateLightbox() {
-        if(window.currentFilteredGallery && window.currentFilteredGallery[window.currentLightboxIndex]) {
+        if (window.currentFilteredGallery && window.currentFilteredGallery[window.currentLightboxIndex]) {
             lightboxImg.src = window.currentFilteredGallery[window.currentLightboxIndex].image;
             currentSpan.textContent = window.currentLightboxIndex + 1;
         }
     }
-    
+
     closeBtn.addEventListener('click', () => {
         lightbox.classList.remove('active');
     });
-    
+
     prevBtn.addEventListener('click', () => {
-        if(!window.currentFilteredGallery) return;
+        if (!window.currentFilteredGallery) return;
         window.currentLightboxIndex = (window.currentLightboxIndex - 1 + window.currentFilteredGallery.length) % window.currentFilteredGallery.length;
         updateLightbox();
     });
-    
+
     nextBtn.addEventListener('click', () => {
-        if(!window.currentFilteredGallery) return;
+        if (!window.currentFilteredGallery) return;
         window.currentLightboxIndex = (window.currentLightboxIndex + 1) % window.currentFilteredGallery.length;
         updateLightbox();
     });
-    
+
     lightbox.addEventListener('click', (e) => {
-        if(e.target === lightbox) lightbox.classList.remove('active');
+        if (e.target === lightbox) lightbox.classList.remove('active');
     });
 }
 
-// Counter Animation
+// Counter Animation (Duration-based for simultaneous completion)
 const counters = document.querySelectorAll('.animate-count');
-const speed = 400; // Higher value makes it slower
+const animationDuration = 2500; // 2.5 seconds for all counters
 
 const animateCounters = () => {
-    let allFinished = true;
     counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
-        const count = +(counter.innerText.replace(/,/g, ''));
-        const inc = target / speed;
+        const startTime = performance.now();
 
-        if (count < target) {
-            allFinished = false;
-            counter.innerText = Math.ceil(count + inc);
-        } else {
-            counter.innerText = target;
-        }
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / animationDuration, 1);
+
+            // Ease-out effect (starts fast, slows down at the end)
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+
+            const currentCount = Math.floor(target * easeOutQuart);
+            counter.innerText = currentCount;
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        requestAnimationFrame(updateCounter);
     });
-    
-    if (!allFinished) {
-        setTimeout(animateCounters, 25);
-    }
 };
 
 const observerOptions = { threshold: 0.5 };
@@ -715,12 +740,12 @@ function initAutoScrollFeeds() {
 
         setInterval(() => {
             if (isHovered) return;
-            
+
             const firstItem = feed.firstElementChild;
             if (!firstItem) return;
-            
+
             const itemWidth = firstItem.offsetWidth + 20; // 20px is the gap
-            
+
             if (feed.scrollLeft >= feed.scrollWidth - feed.clientWidth - 10) {
                 feed.scrollTo({ left: 0, behavior: 'smooth' });
             } else {
@@ -730,3 +755,160 @@ function initAutoScrollFeeds() {
     });
 }
 
+// Appointment Modal Logic
+window.openAppointmentModal = function (doctorName) {
+    const modal = document.getElementById('appointment-modal');
+    if (!modal) return;
+
+    // Populate doctor dropdown if not already populated
+    const select = document.getElementById('appointment-doctor');
+    if (select && select.options.length <= 1) {
+        const docOptions = doctors.filter(d => !d.photo.includes("placeholder") && !d.photo.includes("unknown"));
+        select.innerHTML = '<option value="">Select a Doctor</option>' +
+            docOptions.map(d => `<option value="${d.name}">${d.name} (${d.spec})</option>`).join('');
+    }
+
+    // Set selected doctor
+    if (select && doctorName) {
+        select.value = doctorName;
+    }
+
+    // Set minimum date to today
+    const dateInput = document.getElementById('appointment-date');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+    }
+
+    modal.classList.add('active');
+};
+
+window.closeAppointmentModal = function () {
+    const modal = document.getElementById('appointment-modal');
+    if (modal) modal.classList.remove('active');
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('appointment-form');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('appointment-name').value;
+            const phone = document.getElementById('appointment-phone').value;
+            const issue = document.getElementById('appointment-issue').value;
+            const doctor = document.getElementById('appointment-doctor').value;
+            const date = document.getElementById('appointment-date').value;
+            const time = document.getElementById('appointment-time').value;
+
+            const message = `New Appointment Request
+- Name: ${name}
+- Phone: ${phone}
+- Issue: ${issue || 'N/A'}
+- Doctor: ${doctor || 'Any Available'}
+- Date: ${date}
+- Time: ${time}`;
+
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/919514299393?text=${encodedMessage}`, '_blank');
+            alert('Your appointment request has been sent successfully!');
+            closeAppointmentModal();
+            form.reset();
+        });
+    }
+
+    // Close modal on outside click
+    const modal = document.getElementById('appointment-modal');
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) window.closeAppointmentModal();
+        });
+    }
+});
+
+// About Section Carousel Logic
+let aboutSlideIndex = 0;
+let aboutSlideTimer;
+
+function initAboutCarousel() {
+    showAboutSlides(aboutSlideIndex);
+    // Auto play every 3 seconds
+    aboutSlideTimer = setInterval(() => moveAboutCarousel(1), 3000);
+}
+
+function moveAboutCarousel(n) {
+    clearInterval(aboutSlideTimer); // Reset timer on manual move
+    showAboutSlides(aboutSlideIndex += n);
+    aboutSlideTimer = setInterval(() => moveAboutCarousel(1), 3000);
+}
+
+function currentAboutSlide(n) {
+    clearInterval(aboutSlideTimer); // Reset timer on manual move
+    showAboutSlides(aboutSlideIndex = n);
+    aboutSlideTimer = setInterval(() => moveAboutCarousel(1), 3000);
+}
+
+function showAboutSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("about-slide");
+    let dots = document.getElementsByClassName("about-dot");
+
+    if (slides.length === 0) return;
+
+    if (n >= slides.length) { aboutSlideIndex = 0 }
+    if (n < 0) { aboutSlideIndex = slides.length - 1 }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+
+    slides[aboutSlideIndex].classList.add("active");
+    if (dots[aboutSlideIndex]) {
+        dots[aboutSlideIndex].classList.add("active");
+    }
+}
+
+// --- Cookie Banner Logic ---
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    if (cookieBanner && acceptBtn) {
+        // Check local storage
+        if (!localStorage.getItem("cookiesAccepted")) {
+            setTimeout(() => {
+                cookieBanner.classList.add("show");
+            }, 1000); // Show after 1 second
+        }
+
+        acceptBtn.addEventListener("click", () => {
+            localStorage.setItem("cookiesAccepted", "true");
+            cookieBanner.classList.remove("show");
+        });
+    }
+});
+
+// --- Scroll to Top Button Logic ---
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    if (scrollToTopBtn) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add("show");
+            } else {
+                scrollToTopBtn.classList.remove("show");
+            }
+        });
+
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+});
