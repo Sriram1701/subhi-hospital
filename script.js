@@ -60,7 +60,7 @@ const facilities = [
 ];
 
 const testimonials = [
-    { name: "K. Ramanathan", location: "Cuddalore", review: "Subhi Subhiksham Hospital provided immediate treatment when my father had sudden respiratory distress. The emergency doctors were incredibly prompt, and Dr. Kalaikovan's treatment was excellent.", rating: 5 },
+    { name: "K. Ramanathan", location: "Cuddalore", review: "Subhi Subhiksham Hospitals provided immediate treatment when my father had sudden respiratory distress. The emergency doctors were incredibly prompt, and Dr. Kalaikovan's treatment was excellent.", rating: 5 },
     { name: "S. Meenakshi", location: "Panruti", review: "Delivered my baby under Dr. Suganya Chakaravarthy. The maternity care team and nurses made me feel safe and comfortable throughout. Clean rooms and 24/7 lab facilities.", rating: 5 },
     { name: "V. Selvam", location: "Nellikuppam", review: "Got my knee surgery done under Dr. Vijay Ananad Thambaiah. Very professional staff and clear explanation before the procedure. Walking without pain now!", rating: 5 }
 ];
@@ -106,7 +106,7 @@ const googleReviews = [
     { name: "Arun Kumar", rating: 5, review: "Excellent facility in Cuddalore! The nursing staff is incredibly polite and the hospital is maintained very cleanly. Definitely recommend it." },
     { name: "Pushpa", rating: 5, review: "My mother was admitted to the ICU, and the level of care she received was outstanding. The doctors were transparent about her condition at all times." },
     { name: "Murugan M", rating: 4, review: "Got my lab tests done here. The results were delivered quickly, and the pharmacy being 24/7 is a huge plus for emergency needs." },
-    { name: "Ranjeetha Sri", rating: 5, review: "I recently visited Subhi Subhiksham Hospital for a general checkup. The doctors were very patient and explained everything clearly. Highly satisfied with the care provided." },
+    { name: "Ranjeetha Sri", rating: 5, review: "I recently visited Subhi Subhiksham Hospitals for a general checkup. The doctors were very patient and explained everything clearly. Highly satisfied with the care provided." },
     { name: "Suresh P", rating: 5, review: "One of the best multi-speciality hospitals I have seen. The infrastructure is top-notch, and the doctors are highly experienced and friendly." },
     { name: "Kavitha R", rating: 5, review: "I had a great experience during my maternity stay. The doctors and nurses made sure I was comfortable throughout the process. A big thanks to the team!" },
     { name: "Dinesh K", rating: 4, review: "Very good emergency response. We brought our uncle here late at night, and the trauma team handled the situation extremely well." },
