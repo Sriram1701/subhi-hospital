@@ -491,11 +491,11 @@ function populateData() {
                     </div>
                     <div class="infra-item-small">
                         <img src="${batch[1].image}" alt="${batch[1].title}" loading="lazy">
-                        <div class="infra-label" style="font-size:0.9rem; padding: 15px 10px 10px;">${batch[1].title}</div>
+                        <div class="infra-label">${batch[1].title}</div>
                     </div>
                     <div class="infra-item-small">
                         <img src="${batch[2].image}" alt="${batch[2].title}" loading="lazy">
-                        <div class="infra-label" style="font-size:0.9rem; padding: 15px 10px 10px;">${batch[2].title}</div>
+                        <div class="infra-label">${batch[2].title}</div>
                     </div>
                     <div class="infra-item-large right">
                         <img src="${batch[3].image}" alt="${batch[3].title}" loading="lazy">
@@ -503,11 +503,11 @@ function populateData() {
                     </div>
                     <div class="infra-item-small">
                         <img src="${batch[4].image}" alt="${batch[4].title}" loading="lazy">
-                        <div class="infra-label" style="font-size:0.9rem; padding: 15px 10px 10px;">${batch[4].title}</div>
+                        <div class="infra-label">${batch[4].title}</div>
                     </div>
                     <div class="infra-item-small">
                         <img src="${batch[5].image}" alt="${batch[5].title}" loading="lazy">
-                        <div class="infra-label" style="font-size:0.9rem; padding: 15px 10px 10px;">${batch[5].title}</div>
+                        <div class="infra-label">${batch[5].title}</div>
                     </div>
                 </div>
                 `;
@@ -561,25 +561,33 @@ function setupCarousel(containerSelector, trackSelector, dotsSelector, autoPlay 
     const prevBtn = container.querySelector('.prev-btn');
     const nextBtn = container.querySelector('.next-btn');
 
+    // For infrastructure gallery, always provide exactly 3 pagination dots
+    const isInfrastructure = trackSelector.includes('infrastructure');
+
     let slideWidth = 0;
 
-    setTimeout(() => {
-        const firstSlide = track.firstElementChild;
-        if (firstSlide) slideWidth = firstSlide.offsetWidth + 24; // width + gap
-
-        const slideCount = track.children.length;
+    const renderDots = () => {
+        const dotCount = isInfrastructure ? 3 : track.children.length;
         dotsContainer.innerHTML = '';
-        for (let i = 0; i < slideCount; i++) {
+        for (let i = 0; i < dotCount; i++) {
             const dot = document.createElement('div');
             dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
             dot.addEventListener('click', () => {
-                const newFirst = track.firstElementChild;
-                if (newFirst) slideWidth = newFirst.offsetWidth + 24;
-                track.scrollTo({ left: slideWidth * i, behavior: 'smooth' });
+                const maxScroll = track.scrollWidth - track.clientWidth;
+                if (isInfrastructure) {
+                    const targetScroll = dotCount > 1 ? (maxScroll / (dotCount - 1)) * i : 0;
+                    track.scrollTo({ left: targetScroll, behavior: 'smooth' });
+                } else {
+                    const firstSlide = track.firstElementChild;
+                    if (firstSlide) slideWidth = firstSlide.offsetWidth + 24;
+                    track.scrollTo({ left: slideWidth * i, behavior: 'smooth' });
+                }
             });
             dotsContainer.appendChild(dot);
         }
-    }, 500);
+    };
+
+    setTimeout(renderDots, 400);
 
     if (prevBtn) {
         prevBtn.addEventListener('click', () => {
@@ -598,34 +606,63 @@ function setupCarousel(containerSelector, trackSelector, dotsSelector, autoPlay 
     }
 
     track.addEventListener('scroll', () => {
-        const firstSlide = track.firstElementChild;
-        if (!firstSlide) return;
-        slideWidth = firstSlide.offsetWidth + 24;
-        const index = Math.round(track.scrollLeft / slideWidth);
-
         const dots = dotsContainer.querySelectorAll('.carousel-dot');
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
+        if (dots.length === 0) return;
+
+        if (isInfrastructure) {
+            const maxScroll = track.scrollWidth - track.clientWidth;
+            if (maxScroll <= 0) return;
+            const scrollFraction = track.scrollLeft / maxScroll;
+            const activeIndex = Math.min(2, Math.max(0, Math.round(scrollFraction * 2)));
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === activeIndex);
+            });
+        } else {
+            const firstSlide = track.firstElementChild;
+            if (!firstSlide) return;
+            slideWidth = firstSlide.offsetWidth + 24;
+            const index = Math.round(track.scrollLeft / slideWidth);
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
     });
 
     if (autoPlay) {
-        let isHovered = false;
-        container.addEventListener('mouseenter', () => isHovered = true);
-        container.addEventListener('mouseleave', () => isHovered = false);
+        let isUserInteracting = false;
+        let resumeTimeout = null;
+
+        const pauseAutoPlay = () => {
+            isUserInteracting = true;
+            clearTimeout(resumeTimeout);
+        };
+
+        const resumeAutoPlay = () => {
+            clearTimeout(resumeTimeout);
+            resumeTimeout = setTimeout(() => {
+                isUserInteracting = false;
+            }, 2500);
+        };
+
+        container.addEventListener('mouseenter', pauseAutoPlay);
+        container.addEventListener('mouseleave', () => { isUserInteracting = false; });
+        container.addEventListener('touchstart', pauseAutoPlay, { passive: true });
+        container.addEventListener('touchend', resumeAutoPlay, { passive: true });
 
         setInterval(() => {
-            if (isHovered) return;
+            if (isUserInteracting) return;
             const firstSlide = track.firstElementChild;
             if (!firstSlide) return;
-            const currentSlideWidth = firstSlide.offsetWidth + 24;
+            const slideStep = firstSlide.offsetWidth + 16;
+            const maxScroll = track.scrollWidth - track.clientWidth;
 
-            if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 10) {
+            // When reaching the end, seamlessly loop back to the very first slide
+            if (track.scrollLeft >= maxScroll - 30) {
                 track.scrollTo({ left: 0, behavior: 'smooth' });
             } else {
-                track.scrollBy({ left: currentSlideWidth, behavior: 'smooth' });
+                track.scrollBy({ left: slideStep, behavior: 'smooth' });
             }
-        }, 3000);
+        }, 3200);
     }
 }
 
