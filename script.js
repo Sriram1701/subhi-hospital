@@ -21,7 +21,7 @@ const departments = [
 ];
 
 const doctors = [
-    { name: "Dr. UMAAPATHY KNS", qualification: "MBBS", spec: "Clinical Director", dept: "Emergency", photo: "images/doctors/dr-umaapathy.jpg" },
+    { name: "Dr. UMAAPATHY KNS", qualification: "MBBS", spec: "Clinical Director & Consultant - Emergency and Family Medicine", dept: "Emergency", photo: "images/doctors/dr-umaapathy.jpg" },
     { name: "Dr. YAGNESHWARARAJA", qualification: "MBBS, MD", spec: "Senior Consultant - General Medicine", dept: "General Medicine", photo: "images/doctors/dr-yagneshwararaja.jpg" },
     { name: "Dr. PRAVEEN GANDHI", qualification: "MBBS, MD", spec: "Internal Medicine", dept: "General Medicine", photo: "images/doctors/dr-unknown-male.jpg" },
     { name: "Dr. PRITHIVIRAJ", qualification: "MBBS, MS", spec: "General & Laparoscopic Surgery", dept: "General Surgery", photo: "images/doctors/placeholder-doctor.svg" },
