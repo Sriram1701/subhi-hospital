@@ -1592,6 +1592,7 @@ section {
     margin-bottom: 8px;
 }
 
+.counter-item h2,
 .counter-item h3 {
     font-size: 1.25rem;
     /* Reduced number size */
@@ -2806,6 +2807,7 @@ section {
         margin-bottom: 4px;
     }
 
+    .counter-item h2,
     .counter-item h3 {
         font-size: 1.05rem;
         margin-bottom: 2px;
@@ -4270,6 +4272,7 @@ section {
     flex-grow: 1;
 }
 
+.leadership-info h3,
 .leadership-info h4 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -4496,4 +4499,28 @@ section {
     .career-openings-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- High-Performance Rendering & Fast Loading Enhancements --- */
+.services-section,
+.doctors-section,
+.infrastructure-section,
+.gallery-section,
+.patient-feeds-section,
+.reviews-section,
+.career-section,
+.contact-section,
+.footer-premium {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 700px;
+}
+
+/* Hardware accelerated smooth transforms */
+.doctor-card,
+.service-card,
+.facility-card,
+.gallery-item,
+.leadership-card {
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }

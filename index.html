@@ -87,6 +87,16 @@
     }
     </script>
 
+    <!-- Resource Hints & Preconnections for Fast Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://randomuser.me">
+
+    <!-- Preload Critical Above-The-Fold Assets -->
+    <link rel="preload" as="image" href="images/logo/subhi-logo.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero/background.jpeg" fetchpriority="high">
+
     <!-- Fonts & Icons -->
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
@@ -103,7 +113,7 @@
     <nav id="navbar" class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="images/logo/subhi-logo.jpg" alt="Logo" class="header-logo-img">
+                <img src="images/logo/subhi-logo.jpg" alt="Logo" class="header-logo-img" width="50" height="50" decoding="async" fetchpriority="high">
                 <div class="logo-text-wrapper">
                     <span class="logo-text header-logo-text">SUBHI SUBHIKSHAM HOSPITALS</span>
                     <span class="logo-tagline">MULTI SPECIALITY SERVICES</span>
@@ -165,11 +175,11 @@
                 <!-- Social Proof Section -->
                 <div class="social-proof-wrapper">
                     <div class="avatar-group">
-                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Patient 1">
-                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Patient 2">
-                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Patient 3">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient 4">
-                        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Patient 5">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Patient 1" width="36" height="36" loading="lazy" decoding="async">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Patient 2" width="36" height="36" loading="lazy" decoding="async">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Patient 3" width="36" height="36" loading="lazy" decoding="async">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient 4" width="36" height="36" loading="lazy" decoding="async">
+                        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Patient 5" width="36" height="36" loading="lazy" decoding="async">
                     </div>
                     <div class="social-proof-text">
                         <strong><span class="animate-count" data-target="15000">0</span>+ Happy Patients</strong>
@@ -183,26 +193,25 @@
             <div class="counters-grid">
                 <div class="counter-item">
                     <div class="counter-icon"><i class="fas fa-award"></i></div>
-                    <h3 id="count-experience"><span class="animate-count" data-target="10">0</span>+</h3>
+                    <h2 id="count-experience"><span class="animate-count" data-target="10">0</span>+</h2>
                     <p>Years of Experience</p>
                 </div>
                 <div class="counter-item">
                     <div class="counter-icon"><i class="fas fa-user-md"></i></div>
-                    <h3 id="count-doctors"><span class="animate-count" data-target="18">0</span>+</h3>
+                    <h2 id="count-doctors"><span class="animate-count" data-target="18">0</span>+</h2>
                     <p>Expert Doctors</p>
                 </div>
                 <div class="counter-item">
                     <div class="counter-icon"><i class="fas fa-hospital"></i></div>
-                    <h3 id="count-departments"><span class="animate-count" data-target="18">0</span>+</h3>
+                    <h2 id="count-departments"><span class="animate-count" data-target="18">0</span>+</h2>
                     <p>Departments</p>
                 </div>
                 <div class="counter-item">
                     <div class="counter-icon"><i class="fas fa-users"></i></div>
-                    <h3 id="count-patients"><span class="animate-count" data-target="15000">0</span>+</h3>
+                    <h2 id="count-patients"><span class="animate-count" data-target="15000">0</span>+</h2>
                     <p>Happy Patients</p>
                 </div>
             </div>
-        </div>
         </div>
     </header>
 
@@ -233,13 +242,13 @@
             <div class="about-left-col">
                 <div class="about-img carousel-container">
                     <div class="about-slide active">
-                        <img src="images/about-image/hospital-main.jpg" alt="Hospital Main">
+                        <img src="images/about-image/hospital-main.jpg" alt="Hospital Main" decoding="async" fetchpriority="auto">
                     </div>
                     <div class="about-slide">
-                        <img src="images/about-image/inpatient-block.jpg" alt="Inpatient Block">
+                        <img src="images/about-image/inpatient-block.jpg" alt="Inpatient Block" loading="lazy" decoding="async">
                     </div>
                     <div class="about-slide">
-                        <img src="images/about-image/reception-area.jpg" alt="Reception Area">
+                        <img src="images/about-image/reception-area.jpg" alt="Reception Area" loading="lazy" decoding="async">
                     </div>
                     
                     <div class="carousel-controls">
@@ -278,12 +287,12 @@
                     doctors across 18 specialities, we strive to bring healing, hope, and health to every family.
                 </div>
                 <div class="about-highlight-box">
-                    <h4 class="about-highlight-title">Comprehensive Healthcare Under One Roof</h4>
+                    <h3 class="about-highlight-title">Comprehensive Healthcare Under One Roof</h3>
                     <p class="about-highlight-text">We provide consultation, emergency care, inpatient treatment,
                         surgical services, critical care and diagnostic support across multiple specialties.</p>
                 </div>
                 <div class="about-approach-wrapper">
-                    <h4 class="about-approach-title">Our Approach to Patient Care</h4>
+                    <h3 class="about-approach-title">Our Approach to Patient Care</h3>
                     <p class="about-approach-text">
                         At Subhi Subhiksham Hospitals, we believe good healthcare is not only about treating illness—it
                         is about understanding the patient and family, communicating clearly and providing the right
@@ -397,7 +406,7 @@
         <span class="lightbox-close">&times;</span>
         <div class="lightbox-content">
             <button class="lightbox-btn lightbox-prev"><i class="fas fa-chevron-left"></i></button>
-            <img id="lightbox-img" src="" alt="Gallery Full">
+            <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Gallery Full">
             <button class="lightbox-btn lightbox-next"><i class="fas fa-chevron-right"></i></button>
         </div>
         <div class="lightbox-counter"><span id="lightbox-current">1</span> / <span id="lightbox-total">10</span></div>
@@ -467,11 +476,11 @@
                 <div class="leadership-card">
                     <div class="leadership-img-wrapper">
                         <div class="leadership-img-box">
-                            <img src="images/doctors/prasanna-p.jpeg" alt="Mr. PRASANNA P" class="prasanna-img">
+                            <img src="images/doctors/prasanna-p.jpeg" alt="Mr. PRASANNA P" class="prasanna-img" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="leadership-info">
-                        <h4>Mr. PRASANNA P</h4>
+                        <h3>Mr. PRASANNA P</h3>
                         <span class="leadership-badge">Managing Director</span>
                     </div>
                 </div>
@@ -480,11 +489,11 @@
                 <div class="leadership-card">
                     <div class="leadership-img-wrapper">
                         <div class="leadership-img-box">
-                            <img src="images/doctors/ms- karpagam-bharathi.jpeg" alt="Ms. KARPAGAM BHARATHI" class="karpagam-img">
+                            <img src="images/doctors/ms-karpagam-bharathi.jpeg" alt="Ms. KARPAGAM BHARATHI" class="karpagam-img" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="leadership-info">
-                        <h4>Ms. KARPAGAM BHARATHI</h4>
+                        <h3>Ms. KARPAGAM BHARATHI</h3>
                         <span class="leadership-badge">Nursing Director</span>
                     </div>
                 </div>
@@ -643,7 +652,7 @@
                 <!-- Column 1: Hospital -->
                 <div class="footer-col footer-about">
                     <div class="logo footer-logo">
-                        <img src="images/logo/subhi-logo.jpg" alt="Logo" class="header-logo-img">
+                        <img src="images/logo/subhi-logo.jpg" alt="Logo" class="header-logo-img" width="50" height="50" loading="lazy" decoding="async">
                         <div class="logo-text-wrapper footer-logo-text-wrapper">
                             <span class="logo-text footer-logo-text">SUBHI SUBHIKSHAM HOSPITALS</span>
                             <span class="logo-tagline footer-logo-tagline">MULTI SPECIALITY SERVICES</span>
@@ -799,7 +808,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

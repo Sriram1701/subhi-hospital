@@ -337,7 +337,7 @@ function populateData() {
                 docsContainer.innerHTML = displayedDocs.map((doc) => `
                     <div class="doctor-card">
                         <div class="doc-img-wrapper">
-                            <img src="${doc.photo}" alt="${doc.name}">
+                            <img src="${doc.photo}" alt="${doc.name}" loading="lazy" decoding="async">
                         </div>
                         <div class="doctor-info">
                             <h4>${doc.name}</h4>
@@ -394,7 +394,7 @@ function populateData() {
 
             galleryGrid.innerHTML = filtered.map((item, index) => `
                 <div class="gallery-item" data-index="${index}">
-                    <img src="${item.image}" alt="${item.title}" loading="lazy">
+                    <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async">
                     <div class="gallery-overlay">
                         <div class="gallery-overlay-icon"><i class="fas fa-search-plus"></i></div>
                         <div class="gallery-overlay-text">
@@ -431,7 +431,7 @@ function populateData() {
         const videosHtml = videos.map((item) => `
             <div class="video-slide">
                 <div class="video-thumbnail">
-                    <img src="${item.thumbnail}" alt="${item.title}" loading="lazy">
+                    <img src="${item.thumbnail}" alt="${item.title}" loading="lazy" decoding="async">
                     <div class="play-btn"><i class="fas fa-play"></i></div>
                 </div>
                 <div class="video-info">
@@ -448,7 +448,7 @@ function populateData() {
         const duplicatedFeeds = [...patientFeeds, ...patientFeeds]; // Duplicate for marquee
         const feedsHtml = duplicatedFeeds.map(imgSrc => `
             <div class="feed-item-img">
-                <img src="${imgSrc}" alt="Patient Feed">
+                <img src="${imgSrc}" alt="Patient Feed" loading="lazy" decoding="async">
             </div>
         `).join('');
         patientFeedsContainer.innerHTML = feedsHtml;
@@ -486,27 +486,27 @@ function populateData() {
                 infraHtml += `
                 <div class="infrastructure-slide">
                     <div class="infra-item-large left">
-                        <img src="${batch[0].image}" alt="${batch[0].title}" loading="lazy">
+                        <img src="${batch[0].image}" alt="${batch[0].title}" loading="lazy" decoding="async">
                         <div class="infra-label">${batch[0].title}</div>
                     </div>
                     <div class="infra-item-small">
-                        <img src="${batch[1].image}" alt="${batch[1].title}" loading="lazy">
+                        <img src="${batch[1].image}" alt="${batch[1].title}" loading="lazy" decoding="async">
                         <div class="infra-label">${batch[1].title}</div>
                     </div>
                     <div class="infra-item-small">
-                        <img src="${batch[2].image}" alt="${batch[2].title}" loading="lazy">
+                        <img src="${batch[2].image}" alt="${batch[2].title}" loading="lazy" decoding="async">
                         <div class="infra-label">${batch[2].title}</div>
                     </div>
                     <div class="infra-item-large right">
-                        <img src="${batch[3].image}" alt="${batch[3].title}" loading="lazy">
+                        <img src="${batch[3].image}" alt="${batch[3].title}" loading="lazy" decoding="async">
                         <div class="infra-label">${batch[3].title}</div>
                     </div>
                     <div class="infra-item-small">
-                        <img src="${batch[4].image}" alt="${batch[4].title}" loading="lazy">
+                        <img src="${batch[4].image}" alt="${batch[4].title}" loading="lazy" decoding="async">
                         <div class="infra-label">${batch[4].title}</div>
                     </div>
                     <div class="infra-item-small">
-                        <img src="${batch[5].image}" alt="${batch[5].title}" loading="lazy">
+                        <img src="${batch[5].image}" alt="${batch[5].title}" loading="lazy" decoding="async">
                         <div class="infra-label">${batch[5].title}</div>
                     </div>
                 </div>
