@@ -689,6 +689,22 @@ section {
     padding-bottom: 20px;
 }
 
+.about-header-center {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.about-header-center .badge {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.about-header-center .section-title {
+    color: var(--dark);
+    margin-top: 10px;
+    text-align: center;
+}
+
 .services {
     padding-top: 40px;
 }
@@ -3624,6 +3640,26 @@ section {
     margin-bottom: 12px;
 }
 
+.kural-explanation-box {
+    margin-top: 15px;
+    border-top: 1px dashed var(--primary-light);
+    padding-top: 15px;
+}
+
+.kural-explanation-label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.kural-explanation-text {
+    font-size: 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
 .kural-text {
     color: var(--primary-dark);
     font-size: 1.1rem;
@@ -4293,13 +4329,104 @@ section {
     letter-spacing: 0.3px;
 }
 
-/* --- Career Openings & CTA Banner --- */
+/* --- Career Section & Openings --- */
+.career-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.career-bg-deco-circle {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(30, 60, 114, 0.03);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.career-container {
+    position: relative;
+    z-index: 1;
+}
+
+.career-section-desc {
+    max-width: 650px;
+}
+
+.career-openings-wrapper {
+    margin-top: 60px;
+}
+
+.career-openings-heading-box {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.career-openings-title {
+    font-size: 1.8rem;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.career-openings-subtitle {
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
 .career-openings-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     max-width: 950px;
     margin: 0 auto;
+}
+
+.career-opening-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: var(--transition);
+}
+
+.career-opening-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.career-opening-icon-box {
+    background: rgba(30, 60, 114, 0.06);
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.career-opening-name {
+    font-size: 1.15rem;
+    margin: 0 0 4px 0;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.career-opening-type {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
 }
 
 .career-cta-banner {
@@ -4523,4 +4650,59 @@ section {
 .leadership-card {
     transform: translateZ(0);
     backface-visibility: hidden;
+}
+
+/* Common Layout & Extracted Utility Classes */
+.section-header-column {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.search-bar-center-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.search-bar-center-wrapper.mt-20 {
+    margin-top: 20px;
+}
+
+.footer-copyright-nowrap {
+    white-space: nowrap;
+}
+
+/* Dynamic JS Component Classes */
+.doc-no-results {
+    text-align: center;
+    width: 100%;
+    grid-column: 1 / -1;
+    color: var(--text-light);
+    padding: 40px;
+}
+
+.doc-specialty {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.doc-book-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.reviewer-rating-stars {
+    color: #f59e0b;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.reviewer-google-badge {
+    color: #4285F4;
+    font-size: 1.5rem;
 }

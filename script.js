@@ -330,7 +330,7 @@ function populateData() {
 
             // Render HTML
             if (displayedDocs.length === 0) {
-                docsContainer.innerHTML = '<p style="text-align: center; width: 100%; grid-column: 1 / -1; color: var(--text-light); padding: 40px;">No doctors found matching your criteria.</p>';
+                docsContainer.innerHTML = '<p class="doc-no-results">No doctors found matching your criteria.</p>';
                 docsContainer.style.display = 'block';
             } else {
                 docsContainer.style.display = ''; // Revert to stylesheet default (grid)
@@ -341,8 +341,8 @@ function populateData() {
                         </div>
                         <div class="doctor-info">
                             <h4>${doc.name}</h4>
-                            <p class="doc-specialty" style="color: var(--primary-color); font-weight: 600; margin-bottom: 15px;">${doc.spec}</p>
-                            <button onclick="openAppointmentModal('${doc.name}')" class="btn btn-outline-primary" style="width: 100%; padding: 10px 0; font-size: 0.9rem;">Book Appointment</button>
+                            <p class="doc-specialty">${doc.spec}</p>
+                            <button onclick="openAppointmentModal('${doc.name}')" class="btn btn-outline-primary doc-book-btn">Book Appointment</button>
                         </div>
                     </div>
                 `).join('');
@@ -462,11 +462,11 @@ function populateData() {
                 <div class="review-header">
                     <div class="reviewer-name">
                         <h4>${item.name}</h4>
-                        <div style="color: #f59e0b; font-size: 0.85rem; margin-top: 5px;">
+                        <div class="reviewer-rating-stars">
                             ${'<i class="fas fa-star"></i>'.repeat(item.rating)}
                         </div>
                     </div>
-                    <i class="fab fa-google" style="color: #4285F4; font-size: 1.5rem;"></i>
+                    <i class="fab fa-google reviewer-google-badge"></i>
                 </div>
                 <p class="review-text">${item.review}</p>
             </div>
@@ -793,7 +793,7 @@ function initAutoScrollFeeds() {
 }
 
 // Appointment Modal Logic
-window.openAppointmentModal = function (doctorName) {
+function openAppointmentModal(doctorName) {
     const modal = document.getElementById('appointment-modal');
     if (!modal) return;
 
@@ -818,12 +818,14 @@ window.openAppointmentModal = function (doctorName) {
     }
 
     modal.classList.add('active');
-};
+}
+window.openAppointmentModal = openAppointmentModal;
 
-window.closeAppointmentModal = function () {
+function closeAppointmentModal() {
     const modal = document.getElementById('appointment-modal');
     if (modal) modal.classList.remove('active');
-};
+}
+window.closeAppointmentModal = closeAppointmentModal;
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('appointment-form');
@@ -861,6 +863,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === modal) window.closeAppointmentModal();
         });
     }
+
+    const modalCloseBtn = document.querySelector('.modal-close');
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', window.closeAppointmentModal);
+    }
+
+    const phoneInput = document.getElementById('appointment-phone');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    }
 });
 
 // About Section Carousel Logic
@@ -871,6 +885,16 @@ function initAboutCarousel() {
     showAboutSlides(aboutSlideIndex);
     // Auto play every 3 seconds
     aboutSlideTimer = setInterval(() => moveAboutCarousel(1), 3000);
+
+    const prevBtn = document.querySelector('.about-img .carousel-btn.prev');
+    const nextBtn = document.querySelector('.about-img .carousel-btn.next');
+    if (prevBtn) prevBtn.addEventListener('click', () => moveAboutCarousel(-1));
+    if (nextBtn) nextBtn.addEventListener('click', () => moveAboutCarousel(1));
+
+    const dots = document.querySelectorAll('.about-dot');
+    dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => currentAboutSlide(idx));
+    });
 }
 
 function moveAboutCarousel(n) {

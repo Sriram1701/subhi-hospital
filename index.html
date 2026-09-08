@@ -232,9 +232,9 @@
     </div>
     <!-- 3. About Section -->
     <section id="about" class="about">
-        <div class="container" style="text-align: center; margin-bottom: 24px;">
-            <div class="badge" style="display: inline-flex; margin: 0 auto;"><i class="fas fa-info-circle"></i> ABOUT US</div>
-            <h2 class="section-title" style="color: var(--dark); margin-top: 10px; text-align: center;">Subhi Subhiksham Hospitals</h2>
+        <div class="container about-header-center">
+            <div class="badge"><i class="fas fa-info-circle"></i> ABOUT US</div>
+            <h2 class="section-title">Subhi Subhiksham Hospitals</h2>
         </div>
         
         <div class="container about-grid">
@@ -252,13 +252,13 @@
                     </div>
                     
                     <div class="carousel-controls">
-                        <button class="carousel-btn prev" onclick="moveAboutCarousel(-1)">❮</button>
-                        <button class="carousel-btn next" onclick="moveAboutCarousel(1)">❯</button>
+                        <button class="carousel-btn prev">❮</button>
+                        <button class="carousel-btn next">❯</button>
                     </div>
                     <div class="carousel-dots">
-                        <span class="about-dot active" onclick="currentAboutSlide(0)"></span>
-                        <span class="about-dot" onclick="currentAboutSlide(1)"></span>
-                        <span class="about-dot" onclick="currentAboutSlide(2)"></span>
+                        <span class="about-dot active"></span>
+                        <span class="about-dot"></span>
+                        <span class="about-dot"></span>
                     </div>
                 </div>
 
@@ -268,9 +268,9 @@
                         நோய்நாடி நோய்முதல் நாடி அதுதணிக்கும்<br>
                         வாய்நாடி வாய்ப்பச் செயல்.
                     </p>
-                    <div style="margin-top: 15px; border-top: 1px dashed var(--primary-light); padding-top: 15px;">
-                        <span class="kural-label" style="font-size: 0.9rem; margin-bottom: 8px; display: inline-block;">-- விளக்கம் --</span>
-                        <p style="font-size: 1rem; color: var(--text-main); font-weight: 500; line-height: 1.6;">
+                    <div class="kural-explanation-box">
+                        <span class="kural-label kural-explanation-label">-- விளக்கம் --</span>
+                        <p class="kural-explanation-text">
                             நோயை ஆராய்ந்து, காரணத்தை கண்டறிந்து, சரியான சிகிச்சை அளிப்பதே சிறந்த மருத்துவம்.
                         </p>
                     </div>
@@ -327,13 +327,12 @@
     <!-- 4. Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <div class="section-header"
-                style="flex-direction: column; align-items: center; gap: 15px; text-align: center;">
+            <div class="section-header section-header-column">
                 <div class="badge">Our Services</div>
                 <h2 class="section-title">Explore Services</h2>
                 <p class="section-desc">Discover our comprehensive range of specialized medical services tailored for
                     your health and well-being.</p>
-                <div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
+                <div class="search-bar-center-wrapper">
                     <div class="search-input-wrapper">
                         <i class="fas fa-search search-icon"></i>
                         <input type="text" id="service-search-input" placeholder="Search services..."
@@ -360,7 +359,7 @@
                     <h2 class="section-title">Experienced Specialist Doctors</h2>
                     <p class="section-desc">Our team of doctors is ready to provide the best care for you and your
                         family.</p>
-                    <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                    <div class="search-bar-center-wrapper mt-20">
                         <div class="search-input-wrapper">
                             <i class="fas fa-search search-icon"></i>
                             <input type="text" id="doctor-search-input" placeholder="Search doctors..."
@@ -417,7 +416,7 @@
     <!-- 9. Patient Feeds & Testimonials -->
     <section id="testimonials" class="patient-feeds-section">
         <div class="container">
-            <div class="section-header center-header center-header-padded" style="flex-direction: column; align-items: center; text-align: center; gap: 15px;">
+            <div class="section-header center-header center-header-padded section-header-column">
                 <h2 class="section-title section-title-large">Patient Feeds & Testimonials</h2>
                 <p class="section-desc">Discover the stories of healing and recovery from individuals and families who trusted Subhi Subhiksham Hospitals with their care.</p>
             </div>
@@ -461,14 +460,14 @@
     </section>
 
     <!-- 10.5 Career -->
-    <section id="career" class="career-section" style="padding: 80px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); position: relative; overflow: hidden;">
+    <section id="career" class="career-section">
         <!-- Decorative background elements -->
-        <div style="position: absolute; top: -50px; left: -50px; width: 300px; height: 300px; border-radius: 50%; background: rgba(30, 60, 114, 0.03); z-index: 0;"></div>
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="section-header center-header center-header-padded" style="flex-direction: column; align-items: center; text-align: center; gap: 15px;">
+        <div class="career-bg-deco-circle"></div>
+        <div class="container career-container">
+            <div class="section-header center-header center-header-padded section-header-column">
                 <div class="badge"><i class="fas fa-briefcase"></i> Leadership & Careers</div>
                 <h2 class="section-title">Our Leadership & Careers</h2>
-                <p class="section-desc" style="max-width: 650px;">Guided by visionary leadership, we are always looking for passionate, dedicated professionals to join our healthcare family.</p>
+                <p class="section-desc career-section-desc">Guided by visionary leadership, we are always looking for passionate, dedicated professionals to join our healthcare family.</p>
             </div>
             
             <div class="leadership-grid">
@@ -500,70 +499,70 @@
             </div>
 
             <!-- Current Openings -->
-            <div style="margin-top: 60px;">
-                <div style="text-align: center; margin-bottom: 35px;">
-                    <h3 style="font-size: 1.8rem; color: var(--dark); font-weight: 700;">Current Openings</h3>
-                    <p style="color: var(--text-light); font-size: 1.05rem;">We are actively hiring for the following positions</p>
+            <div class="career-openings-wrapper">
+                <div class="career-openings-heading-box">
+                    <h3 class="career-openings-title">Current Openings</h3>
+                    <p class="career-openings-subtitle">We are actively hiring for the following positions</p>
                 </div>
                 <div class="career-openings-grid">
                     
-                    <div style="background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                        <div style="background: rgba(30,60,114,0.06); color: var(--primary-color); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                    <div class="career-opening-card">
+                        <div class="career-opening-icon-box">
                             <i class="fas fa-user-md"></i>
                         </div>
                         <div>
-                            <h4 style="font-size: 1.15rem; margin: 0 0 4px 0; color: var(--dark); font-weight: 700;">Duty Doctors</h4>
-                            <span style="font-size: 0.9rem; color: var(--text-light); font-weight: 500;">Full-time</span>
+                            <h4 class="career-opening-name">Duty Doctors</h4>
+                            <span class="career-opening-type">Full-time</span>
                         </div>
                     </div>
                     
-                    <div style="background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                        <div style="background: rgba(30,60,114,0.06); color: var(--primary-color); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                    <div class="career-opening-card">
+                        <div class="career-opening-icon-box">
                             <i class="fas fa-user-nurse"></i>
                         </div>
                         <div>
-                            <h4 style="font-size: 1.15rem; margin: 0 0 4px 0; color: var(--dark); font-weight: 700;">Staff Nurses</h4>
-                            <span style="font-size: 0.9rem; color: var(--text-light); font-weight: 500;">Full-time / Shifts</span>
+                            <h4 class="career-opening-name">Staff Nurses</h4>
+                            <span class="career-opening-type">Full-time / Shifts</span>
                         </div>
                     </div>
                     
-                    <div style="background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                        <div style="background: rgba(30,60,114,0.06); color: var(--primary-color); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                    <div class="career-opening-card">
+                        <div class="career-opening-icon-box">
                             <i class="fas fa-pills"></i>
                         </div>
                         <div>
-                            <h4 style="font-size: 1.15rem; margin: 0 0 4px 0; color: var(--dark); font-weight: 700;">Pharmacists</h4>
-                            <span style="font-size: 0.9rem; color: var(--text-light); font-weight: 500;">Full-time</span>
+                            <h4 class="career-opening-name">Pharmacists</h4>
+                            <span class="career-opening-type">Full-time</span>
                         </div>
                     </div>
                     
-                    <div style="background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                        <div style="background: rgba(30,60,114,0.06); color: var(--primary-color); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                    <div class="career-opening-card">
+                        <div class="career-opening-icon-box">
                             <i class="fas fa-desktop"></i>
                         </div>
                         <div>
-                            <h4 style="font-size: 1.15rem; margin: 0 0 4px 0; color: var(--dark); font-weight: 700;">Admin & Reception</h4>
-                            <span style="font-size: 0.9rem; color: var(--text-light); font-weight: 500;">Full-time</span>
+                            <h4 class="career-opening-name">Admin & Reception</h4>
+                            <span class="career-opening-type">Full-time</span>
                         </div>
                     </div>
                     
-                    <div style="background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                        <div style="background: rgba(30,60,114,0.06); color: var(--primary-color); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                    <div class="career-opening-card">
+                        <div class="career-opening-icon-box">
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div>
-                            <h4 style="font-size: 1.15rem; margin: 0 0 4px 0; color: var(--dark); font-weight: 700;">Security Staff</h4>
-                            <span style="font-size: 0.9rem; color: var(--text-light); font-weight: 500;">Full-time / Shifts</span>
+                            <h4 class="career-opening-name">Security Staff</h4>
+                            <span class="career-opening-type">Full-time / Shifts</span>
                         </div>
                     </div>
                     
-                    <div style="background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                        <div style="background: rgba(30,60,114,0.06); color: var(--primary-color); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                    <div class="career-opening-card">
+                        <div class="career-opening-icon-box">
                             <i class="fas fa-broom"></i>
                         </div>
                         <div>
-                            <h4 style="font-size: 1.15rem; margin: 0 0 4px 0; color: var(--dark); font-weight: 700;">Housekeeping</h4>
-                            <span style="font-size: 0.9rem; color: var(--text-light); font-weight: 500;">Full-time</span>
+                            <h4 class="career-opening-name">Housekeeping</h4>
+                            <span class="career-opening-type">Full-time</span>
                         </div>
                     </div>
                 </div>
@@ -731,7 +730,7 @@
         <div class="footer-bottom-bar">
             <div class="container">
                 <div class="footer-bottom-flex">
-                    <p>&copy; 2026 Subhi Subhiksham Hospitals. <span style="white-space: nowrap;">All Rights Reserved.</span></p>
+                    <p>&copy; 2026 Subhi Subhiksham Hospitals. <span class="footer-copyright-nowrap">All Rights Reserved.</span></p>
                     <div class="footer-legal">
                         <span>Privacy Policy</span>
                         <span class="separator">|</span>
@@ -751,7 +750,7 @@
     <!-- Appointment Modal -->
     <div id="appointment-modal" class="modal-overlay">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeAppointmentModal()">&times;</span>
+            <span class="modal-close">&times;</span>
             <div class="modal-header">
                 <h3>Book an Appointment</h3>
                 <p>Fill out the form below and we will confirm your appointment via WhatsApp.</p>
@@ -763,7 +762,7 @@
                 </div>
                 <div class="form-group">
                     <label for="appointment-phone">Phone Number <span class="required">*</span></label>
-                    <input type="tel" id="appointment-phone" required placeholder="Enter 10-digit Phone Number" pattern="[0-9]{10}" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                    <input type="tel" id="appointment-phone" required placeholder="Enter 10-digit Phone Number" pattern="[0-9]{10}" maxlength="10">
                 </div>
                 <div class="form-group">
                     <label for="appointment-doctor">Select Doctor <span class="required">*</span></label>
