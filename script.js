@@ -932,25 +932,6 @@ function showAboutSlides(n) {
     }
 }
 
-// --- Cookie Banner Logic ---
-document.addEventListener("DOMContentLoaded", () => {
-    const cookieBanner = document.getElementById("cookie-banner");
-    const acceptBtn = document.getElementById("accept-cookies");
-
-    if (cookieBanner && acceptBtn) {
-        // Check local storage
-        if (!localStorage.getItem("cookiesAccepted")) {
-            setTimeout(() => {
-                cookieBanner.classList.add("show");
-            }, 1000); // Show after 1 second
-        }
-
-        acceptBtn.addEventListener("click", () => {
-            localStorage.setItem("cookiesAccepted", "true");
-            cookieBanner.classList.remove("show");
-        });
-    }
-});
 
 // --- Scroll to Top Button Logic ---
 document.addEventListener("DOMContentLoaded", () => {

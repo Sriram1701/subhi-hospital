@@ -4070,51 +4070,6 @@ section {
     font-size: 1.05rem;
 }
 
-/* --- Cookie Banner --- */
-.cookie-banner {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    padding: 15px 20px;
-    transition: bottom 0.5s ease-in-out;
-    border-top: 2px solid var(--primary-color);
-}
-
-.cookie-banner.show {
-    bottom: 0;
-}
-
-.cookie-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.cookie-content p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--text-color);
-}
-
-.cookie-content a {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .cookie-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 /* --- 24/7 Emergency Floating Action Button (Round) --- */
 .floating-emergency-btn {
     position: fixed;
