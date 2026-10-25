@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Subhi Subhiksham Hospitals | Rate & Review Us on Google</title>
+    <meta name="title" content="Subhi Subhiksham Hospitals | Rate & Review Us on Google">
+    <meta name="description" content="Share your 5-star experience with Subhi Subhiksham Hospitals Cuddalore. 1-tap Google Review, voice speech-to-text, and instant contact save for NFC cards.">
+    <meta name="theme-color" content="#07101e">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rate Subhi Subhiksham Hospitals on Google">
+    <meta property="og:description" content="Tap to share your review on Google. 24/7 Multi-Speciality Healthcare in Cuddalore.">
+    <meta property="og:image" content="/images/logo/subhi-logo.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/images/logo/subhi-logo.jpg">
+    <link rel="apple-touch-icon" href="/images/logo/subhi-logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+/* ==========================================================================
+   SUBHI SUBHIKSHAM HOSPITALS - EXACT REFERENCE NFC REVIEW CARD
+   Aesthetic: Deep Midnight Navy, Electric Blue CTA, Glassmorphism
+   ========================================================================== */
+
+:root {
+    --bg-dark: #07130e;
+    --bg-card: #0c1c15;
+    --bg-card-glass: rgba(12, 28, 21, 0.94);
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-green: rgba(34, 197, 94, 0.28);
+    --primary-green: #16a34a;
+    --primary-green-hover: #15803d;
+    --secondary-violet: #6d28d9;
+    --accent-emerald: #22c55e;
+    --accent-mint: #4ade80;
+    --accent-gold: #fbbf24;
+    --text-white: #ffffff;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 9999px;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-color: var(--bg-dark);
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-white);
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background Atmosphere */
+.bg-glow-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.55;
+}
+
+.orb-top {
+    width: 320px;
+    height: 320px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(22, 163, 74, 0.42) 0%, rgba(76, 29, 149, 0.3) 50%, rgba(22, 163, 74, 0) 70%);
+}
+
+.orb-mid {
+    width: 260px;
+    height: 260px;
+    top: 40%;
+    right: -50px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.22) 0%, rgba(76, 29, 149, 0.2) 60%, transparent 70%);
+}
+
+/* Mobile-First Wrapper */
+.app-container {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background: #091712;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================================================================
+   TOP NAVBAR (Brand Logo + Hamburger)
+   ========================================================================== */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: rgba(9, 23, 18, 0.96);
+    border-bottom: 1px solid var(--border-subtle);
+    backdrop-filter: blur(16px);
+    position: sticky;
+    top: 0;
+    z-index: 120;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+.navbar-logo-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #16a34a;
+    box-shadow: 0 0 10px rgba(22, 163, 74, 0.4);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logo-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.navbar-menu-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+}
+
+.navbar-menu-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Slide Drawer Navigation (Fixed under sticky Navbar, never scrolls away!) */
+.drawer-backdrop {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 105;
+}
+
+.drawer-backdrop.hidden {
+    display: none;
+}
+
+.drawer-menu {
+    position: fixed;
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 440px;
+    background: rgba(12, 28, 21, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1.5px solid var(--border-green);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.85);
+    z-index: 110;
+    transition: all 0.25s ease;
+}
+
+.drawer-menu.hidden {
+    display: none;
+}
+
+.drawer-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.drawer-link:hover {
+    background: rgba(22, 163, 74, 0.15);
+    color: #ffffff;
+}
+
+.drawer-link i {
+    color: #22c55e;
+    width: 18px;
+}
+
+/* Navbar QR Button */
+.nav-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-qr-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    color: #4ade80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.navbar-qr-btn:hover {
+    background: #16a34a;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Hospital Standee QR Code Modal */
+.qr-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    animation: fadeIn 0.25s ease-out;
+}
+
+.qr-modal-backdrop.hidden {
+    display: none !important;
+}
+
+.qr-modal-card {
+    background: linear-gradient(165deg, #0f271c 0%, #071710 100%);
+    border: 1px solid rgba(74, 222, 128, 0.45);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 340px;
+    padding: 24px 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(34, 197, 94, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    animation: zoomUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes zoomUp {
+    from { opacity: 0; transform: scale(0.85) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.qr-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: #94a3b8;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.qr-modal-close:hover {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.qr-modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.qr-hospital-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #22c55e;
+    margin-bottom: 8px;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+}
+
+.qr-hospital-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+}
+
+.qr-hospital-sub {
+    font-size: 0.74rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.qr-image-wrapper {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.qr-code-img {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+
+.qr-stars-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #fbbf24;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.qr-stars-row span {
+    margin-left: 4px;
+    letter-spacing: 0.05em;
+}
+
+.qr-url-pill {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-pill);
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    color: #4ade80;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 16px;
+}
+
+.qr-modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.qr-action-btn {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.qr-action-btn.btn-download {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
+}
+
+.qr-action-btn.btn-download:hover {
+    background: #22c55e;
+}
+
+.qr-action-btn.btn-share {
+    background: rgba(37, 211, 102, 0.15);
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    color: #25d366;
+}
+
+.qr-action-btn.btn-share:hover {
+    background: #25d366;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   HERO / BRAND SECTION
+   ========================================================================== */
+.hero-branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 18px 12px 18px;
+    position: relative;
+}
+
+/* Glowing Hospital Emblem */
+.hospital-emblem-glow {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+}
+
+.hospital-emblem-glow::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(22, 163, 74, 0.6) 0%, rgba(76, 29, 149, 0.3) 50%, rgba(22, 163, 74, 0) 70%);
+    animation: ringPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes ringPulse {
+    0%, 100% { transform: scale(0.95); opacity: 0.6; }
+    50% { transform: scale(1.15); opacity: 1; }
+}
+
+.hospital-main-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #16a34a;
+    box-shadow: 0 0 25px rgba(22, 163, 74, 0.5);
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+/* Verified Google Business Badge Pill */
+.verified-google-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(14, 38, 26, 0.85);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #4ade80;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+.verified-google-pill i {
+    font-size: 0.82rem;
+    color: #22c55e;
+}
+
+.verified-google-pill .pill-divider {
+    opacity: 0.45;
+    color: #4ade80;
+    font-weight: 400;
+    margin: 0 1px;
+}
+
+.verified-google-pill .pill-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #fbbf24;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.verified-google-pill .pill-rating i {
+    color: #fbbf24;
+    font-size: 0.72rem;
+    filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.5));
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.32rem, 5.2vw, 1.55rem);
+    font-weight: 800;
+    color: var(--text-white);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.hero-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.35;
+    margin-bottom: 14px;
+}
+
+/* Golden Stars Row - Shimmer Wave Animation */
+.stars-display {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.star-icon {
+    color: var(--accent-gold);
+    font-size: 1.38rem;
+    filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.5));
+    display: inline-block;
+    animation: starWaveGlow 2.6s infinite ease-in-out;
+    pointer-events: none;
+}
+
+.stars-display .star-icon:nth-child(1) { animation-delay: 0.0s; }
+.stars-display .star-icon:nth-child(2) { animation-delay: 0.2s; }
+.stars-display .star-icon:nth-child(3) { animation-delay: 0.4s; }
+.stars-display .star-icon:nth-child(4) { animation-delay: 0.6s; }
+.stars-display .star-icon:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes starWaveGlow {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.4));
+        color: #fbbf24;
+    }
+    20% {
+        transform: scale(1.22) translateY(-2px);
+        filter: drop-shadow(0 0 14px rgba(251, 191, 36, 0.95)) drop-shadow(0 0 4px #ffffff);
+        color: #fef08a;
+    }
+    45% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.4));
+        color: #fbbf24;
+    }
+}
+
+.share-experience-heading {
+    font-family: var(--font-heading);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #cbd5e1;
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   CATEGORY SLIDER TRACKS (Double Line Horizontal Running Sliders)
+   ========================================================================== */
+.categories-wrapper {
+    padding: 0 10px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cat-track-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    display: flex;
+    position: relative;
+    padding: 2px 0;
+}
+
+.cat-track-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-track-inner {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    width: max-content;
+    will-change: transform;
+    animation: marqueeSlide 28s linear infinite;
+}
+
+.cat-track-inner.reverse {
+    animation: marqueeSlideReverse 30s linear infinite;
+}
+
+.cat-track-container:hover .cat-track-inner,
+.cat-track-container:active .cat-track-inner {
+    animation-play-state: paused;
+}
+
+@keyframes marqueeSlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeSlideReverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.cat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #0d1e17;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.cat-pill:hover {
+    border-color: rgba(34, 197, 94, 0.4);
+    color: #ffffff;
+}
+
+.cat-pill.active {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    border-color: #22c55e;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.45);
+}
+
+/* ==========================================================================
+   LANGUAGE SWITCHER (Sleek 2-button pill container)
+   ========================================================================== */
+.lang-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    margin-bottom: 20px;
+}
+
+.lang-pill-box {
+    display: inline-flex;
+    background: #0a1812;
+    border: 1px solid var(--border-subtle);
+    padding: 4px;
+    border-radius: var(--radius-pill);
+    gap: 4px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    color: #ffffff;
+}
+
+.lang-btn.active {
+    background: #16a34a;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(22, 163, 74, 0.4);
+}
+
+/* ==========================================================================
+   GENERATED 5-STAR REVIEW CARD (The Exact Layout From Screenshot)
+   ========================================================================== */
+.review-card-section {
+    padding: 0 16px;
+    margin-bottom: 24px;
+    scroll-margin-top: 14px;
+}
+
+.review-card {
+    background: #0c1d16;
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    border-radius: var(--radius-lg);
+    padding: 18px 16px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(22, 163, 74, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+}
+
+.review-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.generated-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-heading);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4ade80;
+}
+
+.generated-badge i {
+    font-size: 0.85rem;
+}
+
+.score-badge {
+    background: rgba(251, 191, 36, 0.12);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    color: #fbbf24;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Quote Text Body */
+.review-quote-wrapper {
+    position: relative;
+}
+
+.review-editable-text {
+    width: 100%;
+    min-height: 90px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    line-height: 1.55;
+    font-weight: 500;
+    resize: none;
+    letter-spacing: -0.01em;
+    caret-color: #22c55e;
+}
+
+.card-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    margin-top: 2px;
+}
+
+/* Action Controls (Copy CTA + Mic + Refresh) */
+.review-actions-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.copy-cta-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    border: 1px solid rgba(74, 222, 128, 0.35);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 0.86rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.45);
+    animation: ctaPulseGlow 2.8s infinite ease-in-out;
+    transition: all 0.25s ease;
+}
+
+/* Radiant Shimmer Beam sweeping across the button */
+.copy-cta-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 45%;
+    height: 200%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.45) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(25deg);
+    animation: ctaShimmerBeam 2.8s infinite ease-in-out;
+    pointer-events: none;
+}
+
+.copy-cta-btn i {
+    font-size: 1rem;
+    animation: ctaIconNudge 2.8s infinite ease-in-out;
+}
+
+@keyframes ctaPulseGlow {
+    0%, 100% {
+        box-shadow: 0 6px 20px rgba(22, 163, 74, 0.45), 0 0 0 0 rgba(34, 197, 94, 0.4);
+    }
+    50% {
+        box-shadow: 0 10px 30px rgba(22, 163, 74, 0.7), 0 0 0 8px rgba(34, 197, 94, 0);
+    }
+}
+
+@keyframes ctaShimmerBeam {
+    0% {
+        left: -80%;
+    }
+    35%, 100% {
+        left: 145%;
+    }
+}
+
+@keyframes ctaIconNudge {
+    0%, 65%, 100% {
+        transform: scale(1);
+    }
+    72% {
+        transform: scale(1.22) rotate(-8deg);
+    }
+    82% {
+        transform: scale(1.15) rotate(6deg);
+    }
+    90% {
+        transform: scale(1);
+    }
+}
+
+.copy-cta-btn:hover {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(22, 163, 74, 0.8), 0 0 16px rgba(34, 197, 94, 0.5);
+}
+
+.copy-cta-btn:active {
+    transform: scale(0.97);
+}
+
+.round-control-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: #10241b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #4ade80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.round-control-btn:hover {
+    background: #153024;
+    border-color: rgba(34, 197, 94, 0.4);
+    color: #ffffff;
+}
+
+.round-control-btn.recording {
+    background: #ef4444 !important;
+    color: #ffffff !important;
+    border-color: #f87171 !important;
+    animation: micWave 1.2s infinite;
+}
+
+@keyframes micWave {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); }
+    70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* ==========================================================================
+   VOICE RECORDER STUDIO BAR (Authentic High-Tech Voice Recorder)
+   ========================================================================== */
+.voice-recorder-bar {
+    background: linear-gradient(145deg, rgba(14, 34, 25, 0.98), rgba(8, 20, 15, 0.98));
+    border: 1px solid rgba(34, 197, 94, 0.45);
+    border-radius: var(--radius-md);
+    padding: 12px 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), inset 0 0 14px rgba(34, 197, 94, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 8px;
+    animation: vrSlideDown 0.25s ease-out;
+}
+
+@keyframes vrSlideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.voice-recorder-bar.hidden {
+    display: none !important;
+}
+
+.vr-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vr-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+}
+
+.vr-dot {
+    width: 8px;
+    height: 8px;
+    background: #ef4444;
+    border-radius: 50%;
+    animation: vrDotPulse 1s infinite;
+}
+
+@keyframes vrDotPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(0.75); }
+}
+
+.vr-title {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #fca5a5;
+    text-transform: uppercase;
+}
+
+.vr-timer {
+    font-family: monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 2px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+}
+
+.vr-lang-group {
+    display: inline-flex;
+    gap: 3px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 3px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vr-lang-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.vr-lang-btn.active {
+    background: #16a34a;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(22, 163, 74, 0.5);
+}
+
+/* Audio Waveform Equalizer */
+.vr-wave-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 26px;
+    padding: 2px 0;
+}
+
+.vr-wave-bar {
+    width: 4px;
+    background: linear-gradient(180deg, #4ade80 0%, #16a34a 100%);
+    border-radius: 2px;
+    height: 8px;
+    animation: vrWaveAnim 1.2s infinite ease-in-out;
+}
+
+.vr-wave-bar:nth-child(1)  { animation-delay: 0.0s; height: 10px; }
+.vr-wave-bar:nth-child(2)  { animation-delay: 0.2s; height: 22px; }
+.vr-wave-bar:nth-child(3)  { animation-delay: 0.4s; height: 14px; }
+.vr-wave-bar:nth-child(4)  { animation-delay: 0.1s; height: 26px; }
+.vr-wave-bar:nth-child(5)  { animation-delay: 0.3s; height: 18px; }
+.vr-wave-bar:nth-child(6)  { animation-delay: 0.5s; height: 24px; }
+.vr-wave-bar:nth-child(7)  { animation-delay: 0.25s; height: 16px; }
+.vr-wave-bar:nth-child(8)  { animation-delay: 0.15s; height: 22px; }
+.vr-wave-bar:nth-child(9)  { animation-delay: 0.35s; height: 12px; }
+.vr-wave-bar:nth-child(10) { animation-delay: 0.05s; height: 20px; }
+
+@keyframes vrWaveAnim {
+    0%, 100% {
+        transform: scaleY(0.4);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scaleY(1.4);
+        opacity: 1;
+        background: linear-gradient(180deg, #86efac 0%, #22c55e 100%);
+    }
+}
+
+.vr-status-msg {
+    font-size: 0.76rem;
+    color: #a7f3d0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(6, 78, 59, 0.35);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    padding: 7px 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vr-status-msg i {
+    color: #34d399;
+}
+
+.vr-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.vr-btn {
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    transition: all 0.2s ease;
+}
+
+.vr-btn-done {
+    background: #16a34a;
+    color: #ffffff;
+    flex: 1;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.4);
+}
+
+.vr-btn-done:hover {
+    background: #22c55e;
+}
+
+.vr-btn-retry {
+    background: #1e293b;
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.vr-btn-retry:hover {
+    background: #334155;
+    color: #ffffff;
+}
+
+.vr-btn-close {
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 8px 12px;
+}
+
+.vr-btn-close:hover {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+
+/* Helper Text */
+.card-micro-hint {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #4ade80;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   CIRCULAR ACTION GRID (5 Buttons in a Row)
+   ========================================================================== */
+.quick-action-circles {
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 14px 18px 14px;
+}
+
+.action-circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #cbd5e1;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.action-circle-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #0d1e17;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.action-circle-item:hover .action-circle-icon {
+    transform: scale(1.1);
+    border-color: #22c55e;
+}
+
+.icon-save { color: #22c55e; border-color: rgba(34, 197, 94, 0.3); }
+.icon-whatsapp { color: #25d366; border-color: rgba(37, 211, 102, 0.3); }
+.icon-call { color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); }
+.icon-instagram { color: #f472b6; border-color: rgba(244, 114, 182, 0.3); }
+.icon-website { color: #a78bfa; border-color: rgba(167, 139, 250, 0.3); }
+
+.action-circle-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* ==========================================================================
+   ADDRESS & MAP
+   ========================================================================== */
+.address-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 0 20px;
+    margin-bottom: 14px;
+    font-size: 0.74rem;
+    color: #94a3b8;
+    line-height: 1.45;
+}
+
+.address-banner i {
+    color: #22c55e;
+    margin-top: 2px;
+}
+
+.map-container {
+    padding: 0 16px;
+    margin-bottom: 24px;
+}
+
+.map-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.map-card iframe {
+    display: block;
+    width: 100%;
+    height: 160px;
+    border: none;
+}
+
+/* ==========================================================================
+   FOOTER (Developed by Sri Web Squad)
+   ========================================================================== */
+.page-footer {
+    margin-top: auto;
+    padding: 20px 16px;
+    text-align: center;
+    border-top: 1px solid var(--border-subtle);
+    background: #06110c;
+}
+
+.footer-copy {
+    font-size: 0.74rem;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+}
+
+.dev-by-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #22c55e;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.dev-by-link:hover {
+    color: #ffffff;
+}
+
+/* Floating WhatsApp Quick Contact Button */
+.floating-chat-bubble {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #25d366;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.4rem;
+    z-index: 999;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.floating-chat-bubble:hover {
+    transform: scale(1.08);
+}
+
+/* Toast */
+.toast-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0d2218;
+    border: 1.5px solid #16a34a;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.82rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.toast-box.hidden {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px);
+    pointer-events: none;
+}
+
+.confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/* ==========================================================================
+   PORTAL 30-DAY EXPIRY STATE (INTERNAL ENGINE - NO COUNTDOWN TIMER)
+   ========================================================================== */
+.portal-expired-card {
+    background: var(--bg-card-glass);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    border-radius: var(--radius-lg);
+    padding: 38px 24px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(239, 68, 68, 0.15);
+    margin: 24px 0 32px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.4s ease;
+}
+
+.portal-expired-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ef4444, #f59e0b, #ef4444);
+}
+
+.expired-icon-wrapper {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: rgba(239, 68, 68, 0.12);
+    border: 2px solid rgba(239, 68, 68, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 2rem;
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+}
+
+.expired-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.expired-title {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.expired-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 26px;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expired-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-expired-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #1d68fe, #2563eb);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(29, 104, 254, 0.35);
+    transition: all 0.2s ease;
+}
+
+.btn-expired-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(29, 104, 254, 0.45);
+}
+
+.btn-expired-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-white);
+    border: 1px solid var(--border-subtle);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-expired-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow-orb orb-top"></div>
+    <div class="bg-glow-orb orb-mid"></div>
+
+    <div class="app-container">
+        
+        <!-- Top Navbar -->
+        <header class="top-navbar">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-logo-badge">
+                    <img src="images/logo/subhi-logo.jpg" alt="Logo" onerror="this.onerror=null; this.src='/images/logo/subhi-logo.jpg';">
+                </div>
+                <span class="navbar-title">Subhi Subhiksham Hospitals</span>
+            </a>
+            <div class="nav-right-actions">
+                <button class="navbar-qr-btn" id="openQrModalBtn" aria-label="Show Hospital QR Code" title="Scan & Share QR Code">
+                    <i class="fas fa-qrcode"></i>
+                </button>
+                <button class="navbar-menu-btn" id="drawerToggleBtn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Backdrop for Drawer Menu -->
+        <div class="drawer-backdrop hidden" id="drawerBackdrop"></div>
+
+        <!-- Dropdown / Drawer Menu (Fixed under Navbar) -->
+        <nav class="drawer-menu hidden" id="drawerMenu">
+            <a href="javascript:void(0)" class="drawer-link" id="drawerQrLink"><i class="fas fa-qrcode"></i> Scan / Download Hospital QR</a>
+            <a href="index.html" class="drawer-link"><i class="fas fa-hospital"></i> Hospital Main Website</a>
+            <a href="tel:+919514299393" class="drawer-link"><i class="fas fa-phone-alt"></i> Call Emergency 24/7</a>
+            <a href="https://wa.me/919514299393" class="drawer-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp Consultation</a>
+            <a href="https://www.google.com/maps/place/Subhi+Subhiksham+Hospitals+Pvt+Ltd/@11.7489459,79.7654655,17z/data=!4m8!3m7!1s0x3a5499fc05d33519:0x494043054fecdf76!8m2!3d11.7489407!4d79.7680404!9m1!1b1!16s%2Fg%2F11xzhg47z6" class="drawer-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-dot"></i> Google Maps Route</a>
+        </nav>
+
+        <!-- Active Review Portal Content (Active for 30 Days) -->
+        <div id="portalActiveContent">
+
+        <!-- Hero Branding Section -->
+        <section class="hero-branding">
+            <div class="hospital-emblem-glow">
+                <img src="images/logo/subhi-logo.jpg" alt="Subhi Subhiksham Hospitals" class="hospital-main-logo" onerror="this.onerror=null; this.src='/images/logo/subhi-logo.jpg';">
+            </div>
+
+            <div class="verified-google-pill">
+                <i class="fas fa-shield-check"></i>
+                <span>VERIFIED GOOGLE BUSINESS</span>
+                <span class="pill-divider">•</span>
+                <span class="pill-rating"><i class="fas fa-star"></i> 4.9</span>
+            </div>
+
+            <h1 class="hero-title">Subhi Subhiksham Hospitals</h1>
+            <p class="hero-subtitle">Multi-Speciality Healthcare • 24/7 Emergency Care • Cuddalore</p>
+
+            <div class="stars-display">
+                <i class="fas fa-star star-icon"></i>
+                <i class="fas fa-star star-icon"></i>
+                <i class="fas fa-star star-icon"></i>
+                <i class="fas fa-star star-icon"></i>
+                <i class="fas fa-star star-icon"></i>
+            </div>
+
+            <div class="share-experience-heading">SHARE YOUR EXPERIENCE ON GOOGLE</div>
+        </section>
+
+        <!-- Department Sliders (Double Line Horizontal Running Sliders) -->
+        <section class="categories-wrapper">
+            <!-- Row 1 Slider -->
+            <div class="cat-track-container">
+                <div class="cat-track-inner">
+                    <button class="cat-pill active" data-category="emergency">
+                        <span>🚨</span> All Services
+                    </button>
+                    <button class="cat-pill" data-category="general">
+                        <span>🩺</span> General Medicine
+                    </button>
+                    <button class="cat-pill" data-category="ortho">
+                        <span>🦴</span> Orthopaedics
+                    </button>
+                    <button class="cat-pill" data-category="maternity">
+                        <span>👶</span> Maternity & Delivery
+                    </button>
+                    <!-- Cloned for seamless continuous loop -->
+                    <button class="cat-pill" data-category="emergency">
+                        <span>🚨</span> All Services
+                    </button>
+                    <button class="cat-pill" data-category="general">
+                        <span>🩺</span> General Medicine
+                    </button>
+                    <button class="cat-pill" data-category="ortho">
+                        <span>🦴</span> Orthopaedics
+                    </button>
+                    <button class="cat-pill" data-category="maternity">
+                        <span>👶</span> Maternity & Delivery
+                    </button>
+                </div>
+            </div>
+
+            <!-- Row 2 Slider -->
+            <div class="cat-track-container">
+                <div class="cat-track-inner reverse">
+                    <button class="cat-pill" data-category="surgery">
+                        <span>🔬</span> Laparoscopic Surgery
+                    </button>
+                    <button class="cat-pill" data-category="neuro">
+                        <span>🧠</span> Neurology
+                    </button>
+                    <button class="cat-pill" data-category="pharmacy">
+                        <span>💊</span> 24/7 Pharmacy
+                    </button>
+                    <button class="cat-pill" data-category="homoeopathy">
+                        <span>🌿</span> Homoeopathy
+                    </button>
+                    <!-- Cloned for seamless continuous loop -->
+                    <button class="cat-pill" data-category="surgery">
+                        <span>🔬</span> Laparoscopic Surgery
+                    </button>
+                    <button class="cat-pill" data-category="neuro">
+                        <span>🧠</span> Neurology
+                    </button>
+                    <button class="cat-pill" data-category="pharmacy">
+                        <span>💊</span> 24/7 Pharmacy
+                    </button>
+                    <button class="cat-pill" data-category="homoeopathy">
+                        <span>🌿</span> Homoeopathy
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multi-Language Switcher -->
+        <div class="lang-container">
+            <div class="lang-pill-box">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ta">தமிழ்</button>
+            </div>
+        </div>
+
+        <!-- GENERATED 5-STAR REVIEW CARD (The Target Section) -->
+        <section class="review-card-section" id="reviewCardSection">
+            <div class="review-card">
+                
+                <!-- Voice Recorder Studio Bar (Expands smoothly when Mic is tapped) -->
+                <div class="voice-recorder-bar hidden" id="voiceRecorderBar">
+                    <div class="vr-top-row">
+                        <div class="vr-badge">
+                            <span class="vr-dot"></span>
+                            <span class="vr-title">VOICE RECORDER</span>
+                            <span class="vr-timer" id="vrTimer">00:00</span>
+                        </div>
+                        <div class="vr-lang-group">
+                            <button type="button" class="vr-lang-btn active" data-vlang="ta">🇮🇳 தமிழ்</button>
+                            <button type="button" class="vr-lang-btn" data-vlang="en">🇬🇧 English</button>
+                            <button type="button" class="vr-lang-btn" data-vlang="tanglish">🔤 Tanglish</button>
+                        </div>
+                    </div>
+
+                    <!-- Animated Audio Waveform -->
+                    <div class="vr-wave-container">
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                        <span class="vr-wave-bar"></span>
+                    </div>
+
+                    <div class="vr-status-msg" id="vrStatusMsg">
+                        <i class="fas fa-microphone-lines"></i>
+                        <span id="vrLiveTranscript">Listening... Speak your review now</span>
+                    </div>
+
+                    <div class="vr-actions">
+                        <button type="button" class="vr-btn vr-btn-done" id="vrDoneBtn">
+                            <i class="fas fa-check"></i> Done (முடிந்தது)
+                        </button>
+                        <button type="button" class="vr-btn vr-btn-retry" id="vrRetryBtn">
+                            <i class="fas fa-rotate-left"></i> Re-record
+                        </button>
+                        <button type="button" class="vr-btn vr-btn-close" id="vrCloseBtn" title="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Review Text Body (Editable) -->
+                <div class="review-quote-wrapper">
+                    <textarea id="reviewTextarea" class="review-editable-text" rows="3" placeholder="Writing your 5-star review..."></textarea>
+                </div>
+
+                <div class="card-divider"></div>
+
+                <!-- Actions: Copy CTA + Mic + Shuffle -->
+                <div class="review-actions-row">
+                    <button class="copy-cta-btn" id="copyGoogleBtn">
+                        <i class="fas fa-copy"></i>
+                        <span id="copyBtnLabel">COPY & PASTE ON GOOGLE</span>
+                    </button>
+                    
+                    <button class="round-control-btn" id="voiceMicBtn" title="Speak to Type (Tamil/English)">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+
+                    <button class="round-control-btn" id="shuffleBtn" title="Shuffle New Review">
+                        <i class="fas fa-rotate"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Quick 5 Circular Action Icons -->
+        <section class="quick-action-circles">
+            <!-- 1. Save Contact -->
+            <button class="action-circle-item" id="saveContactBtn">
+                <div class="action-circle-icon icon-save">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <span class="action-circle-label">Save<br>Contact</span>
+            </button>
+
+            <!-- 2. WhatsApp -->
+            <a href="https://wa.me/919514299393?text=Hello%20Subhi%20Subhiksham%20Hospitals,%20I%20would%20like%20to%20inquire%20about%20doctor%20consultation." target="_blank" rel="noopener noreferrer" class="action-circle-item">
+                <div class="action-circle-icon icon-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span class="action-circle-label">WhatsApp</span>
+            </a>
+
+            <!-- 3. Call Us -->
+            <a href="tel:+919514299393" class="action-circle-item">
+                <div class="action-circle-icon icon-call">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <span class="action-circle-label">Call<br>Us</span>
+            </a>
+
+            <!-- 4. Instagram -->
+            <a href="https://www.instagram.com/subhisubhkisham?igsi=MWRuMW44cGM5MzVrMQ==" target="_blank" rel="noopener noreferrer" class="action-circle-item">
+                <div class="action-circle-icon icon-instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span class="action-circle-label">Instagram</span>
+            </a>
+
+            <!-- 5. Visit Website -->
+            <a href="index.html" class="action-circle-item">
+                <div class="action-circle-icon icon-website">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <span class="action-circle-label">Visit<br>Website</span>
+            </a>
+        </section>
+
+        </div><!-- /#portalActiveContent -->
+
+        <!-- Portal Expired Card (Shown automatically after 30-Day Expiry) -->
+        <section id="portalExpiredCard" class="portal-expired-card" style="display: none;">
+            <div class="expired-icon-wrapper">
+                <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="expired-badge">
+                <i class="fas fa-clock-rotate-left"></i> Service Expired
+            </div>
+            <h2 class="expired-title">Review Portal Access Expired</h2>
+            <p class="expired-desc">
+                The 30-day active period for this interactive Google Review Assistant has ended. You can still leave your valuable feedback directly on Google, or contact our hospital administration.
+            </p>
+            <div class="expired-actions">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJGTXTBfyZVToRdt_sTwVDQEk" target="_blank" rel="noopener noreferrer" class="btn-expired-primary">
+                    <i class="fab fa-google"></i> Leave Direct Review on Google
+                </a>
+                <a href="tel:+919514299393" class="btn-expired-secondary">
+                    <i class="fas fa-phone-alt"></i> Call Hospital (+91 95142 99393)
+                </a>
+                <a href="index.html" class="btn-expired-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to Main Website
+                </a>
+            </div>
+        </section>
+
+        <!-- Google Map Card -->
+        <div class="map-container">
+            <div class="map-card">
+                <iframe 
+                    title="Subhi Subhiksham Hospital Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.382228392107!2d79.76546547565403!3d11.748940688465493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5499fc05d33519%3A0x494043054fecdf76!2sSubhi%20Subhiksham%20Hospitals%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Address Text (Below Map) -->
+        <div class="address-banner">
+            <i class="fas fa-location-dot"></i>
+            <span>No. 6, Lokambal Kovil Street, Seetharam Nagar, Near CK School, Pudupalayam, Cuddalore – 607 001</span>
+        </div>
+
+        <!-- Footer With Developer Link -->
+        <footer class="page-footer">
+            <p class="footer-copy">© 2026 Subhi Subhiksham Hospitals. All rights reserved.</p>
+            <p style="margin-top: 6px;">
+                <a href="https://wa.me/917845391712?text=Hi%20Sri%20Web%20Squad%2C%20I%20saw%20the%20Subhi%20Subhiksham%20Hospitals%20Google%20Review%20card%20developed%20by%20you" target="_blank" rel="noopener noreferrer" class="dev-by-link">
+                    Developed by <strong>Sri Web Squad</strong>
+                </a>
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Floating Chat Widget (Bottom Right) -->
+    <a href="https://wa.me/919514299393?text=Hello%20Subhi%20Subhiksham%20Hospitals,%20I%20need%20quick%20assistance." target="_blank" rel="noopener noreferrer" class="floating-chat-bubble" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toastBox" class="toast-box hidden">
+        <i class="fas fa-check-circle" style="color: #4ade80;"></i>
+        <span id="toastMessage">Copied! Opening Google Reviews...</span>
+    </div>
+
+    <!-- Hospital Standee QR Code Modal -->
+    <div class="qr-modal-backdrop hidden" id="qrModalBackdrop">
+        <div class="qr-modal-card">
+            <button class="qr-modal-close" id="closeQrModalBtn" aria-label="Close QR Modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="qr-modal-header">
+                <img src="images/logo/subhi-logo.jpg" alt="Subhi Subhiksham Hospitals" class="qr-hospital-logo" onerror="this.onerror=null; this.src='/images/logo/subhi-logo.jpg';">
+                <h3 class="qr-hospital-title">Subhi Subhiksham Hospitals</h3>
+                <p class="qr-hospital-sub">Scan to Open Review Assistant & Templates on Mobile</p>
+            </div>
+            <div class="qr-image-wrapper">
+                <img src="images/subhi-review-page-live-qr.png" alt="Hospital Review Page QR Code" class="qr-code-img">
+            </div>
+            <div class="qr-stars-row">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>4.9 ★ GOOGLE REVIEW</span>
+            </div>
+            <div class="qr-url-pill">
+                <i class="fas fa-globe"></i>
+                <span id="qrUrlText">https://pubmed-mens-player-orlando.trycloudflare.com</span>
+            </div>
+            <div class="qr-modal-actions">
+                <a href="images/subhi-review-page-live-qr.png" download="Subhi-Review-Page-QR.png" class="qr-action-btn btn-download">
+                    <i class="fas fa-download"></i> Download Review Page QR Code (HD)
+                </a>
+                <button type="button" class="qr-action-btn btn-share" id="qrShareBtn">
+                    <i class="fab fa-whatsapp"></i> Share Link on WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+    <script>
+/**
+ * SUBHI SUBHIKSHAM HOSPITALS - GOOGLE REVIEW NFC ENGINE
+ * Auto-scroll to review card, voice typing, 1-tap copy, multi-language typewriter
+ */
+const GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJGTXTBfyZVToRdt_sTwVDQEk";
+
+const reviewsDataset = {
+    emergency: {
+        en: [
+            "Outstanding 24/7 emergency response at Subhi Subhiksham Hospitals! The trauma team and Dr. Umaapathy KNS took immediate action when we rushed in at midnight with a severe injury. Caring ICU nurses and prompt triage saved my family member's life. Truly the most reliable healthcare lifeline in Cuddalore!",
+            "Best emergency and trauma care hospital in Cuddalore. Prompt admission with zero casualty delay. The duty medical officers explained everything calmly, stabilized my father within minutes, and started the right treatment without pushing unnecessary tests. 5/5 stars!",
+            "Brought my brother to the casualty after a road mishap on Cuddalore highway. The surgical and emergency staff acted swiftly, arranged scans instantly, and provided top-class wound care and observation. Very reassuring doctors and affordable billing.",
+            "Extremely impressed with their quick triage and emergency setup. Clean ICU beds, attentive nursing care round the clock, and highly skilled emergency specialists. Subhi Subhiksham is a huge blessing for Cuddalore residents during critical medical emergencies.",
+            "One of the cleanest and most well-maintained hospitals in Cuddalore. Right from the security at the gate to the reception desk, everyone was courteous and helpful. Patient rooms are sanitized, peaceful, and spacious.",
+            "We had an emergency admission late at night, and the Star Health insurance cashless approval was processed in less than an hour! Transparent billing with zero hidden costs. Truly ethical medical management.",
+            "The nursing staff here deserves special appreciation. Whenever we pressed the call bell, a sister attended within 30 seconds with genuine patience. It felt like family taking care of us during our hospital stay.",
+            "Subhi Subhiksham has brought metropolitan-grade multi-speciality healthcare right to Cuddalore. High-tech ICU monitors, digital lab reports, clean air-conditioned wards, and renowned senior consultants under one roof.",
+            "Doctor Umaapathy sir and the casualty team treated my uncle with so much personal care. He patiently answered all our family's anxious questions and gave us great confidence. Highly recommended hospital!",
+            "Very smooth discharge process without any long waiting. The staff gave detailed medicine instructions in Tamil and guided us on home care. Thank you to everyone at Subhi Subhiksham Hospitals!"
+        ],
+        tanglish: [
+            "Subhi Subhiksham hospital-la emergency care romba quick-ah irundhuchu! Midnight-la casualty doctors immediate-ah attend panni treat pannanga. Staff ellam romba supportive. Truly the best hospital in Cuddalore!",
+            "Midnight emergency-ku romba bayandhom, aana Subhi Subhiksham vandhadhum prompt treatment kuduthu full recovery aachu. ICU care, hygiene & doctor response 100% top-notch!",
+            "Dr. Umaapathy sir and nurses semma care eduthukitaanga. No unnecessary delays, genuine treatment. Highly recommend panren!",
+            "Casualty-la entry panna udane immediate response kedaichuthu. Quick scan reports, polite doctors and best ICU facility in Cuddalore!",
+            "Hospital romba clean and peaceful-ah maintain panranga. Cuddalore-la ithey mathiri dedicated doctors and caring nurses paakuradhu romba periya vishayam."
+        ],
+        ta: [
+            "சுபி சுபிக்ஷம் மருத்துவமனையின் 24 மணி நேர அவசர சிகிச்சை பிரிவு மிகச் சிறப்பானது! நள்ளிரவில் தீவிர உடல்நலக் குறைவோடு சென்றபோது, டாக்டர் உமாபதி மற்றும் அவசரப் பிரிவு மருத்துவர்கள் ஒரு நொடியும் தாமதிக்காமல் உடனடியாக சிகிச்சை அளித்து காப்பாற்றினர். கடலூரில் சிறந்த மருத்துவமனை!",
+            "அவசர விபத்து சிகிச்சைக்காக எங்கள் உறவினரை சேர்த்தோம். அதிநவீன ஐசியூ வார்டு மற்றும் செவிலியர்களின் கனிவான 24/7 பராமரிப்பு மனதிற்கு மிகுந்த நிம்மதி தந்தது. நியாயமான கட்டணம் மற்றும் வெளிப்படையான சிகிச்சை முறைக்கு நன்றி!",
+            "கடலூரில் அவசர காலங்களில் உடனே நம்பி வரக்கூடிய இடம் சுபி சுபிக்ஷம் மருத்துவமனை மட்டுமே. உடனடி அட்மிஷன், சுத்தமான வார்டுகள், அனுபவம் வாய்ந்த மருத்துவர்கள் மற்றும் உடனடி ஆம்புலன்ஸ் சேவை.",
+            "நள்ளிரவு நேரத்தில் வந்தபோதும் எந்தவித தாமதமும் இன்றி மருத்துவர் உடனே வந்து முதலுதவி சிகிச்சை அளித்தார். ஊழியர்களின் அன்பான அணுகுமுறை மற்றும் அக்கறையான கவனிப்பிற்கு எனது மனமார்ந்த பாராட்டுகள்!",
+            "கடலூரில் மிகத் தூய்மையான, அமைதியான சூழல் கொண்ட மருத்துவமனை. வரவேற்பறை ஊழியர்கள் முதல் செவிலியர்கள் வரை அனைவரும் மிகவும் மரியாதையாகவும் கனிவாகவும் பேசுகிறார்கள். நோயாளி அறைகள் மிக சுத்தமாக உள்ளன.",
+            "மருத்துவக் காப்பீடு (Insurance TPA) உதவி மையம் மிக சிறப்பாக செயல்படுகிறது. எங்கள் ஸ்டார் ஹெல்த் இன்சூரன்ஸ் கேஷ்லெஸ் அப்ரூவல் மிக விரைவாக முடித்துத் தந்தனர். வெளிப்படையான கட்டண முறை!",
+            "இங்குள்ள செவிலியர்களின் சேவை மனப்பான்மை போற்றத்தக்கது. எந்த நேரத்தில் அழைத்தாலும் முகம் சுளிக்காமல் உடனே வந்து மருந்து மாத்திரைகள் கொடுத்து அக்கறையுடன் கவனித்துக் கொள்கிறார்கள்.",
+            "சென்னை போன்ற பெருநகரங்களில் இருக்கும் அனைத்து நவீன வசதிகளும் இப்போது நம் கடலூரிலேயே கிடைப்பது மிகுந்த மகிழ்ச்சி அளிக்கிறது. சிறந்த மருத்துவர்கள் மற்றும் நியாயமான கட்டணம்.",
+            "டாக்டர் உமாபதி சார் நோயாளிகளிடம் காட்டும் கனிவும், நோய் குறித்து தெளிவாக விளக்கும் விதமும் மிகுந்த தைரியத்தை தருகிறது. எங்கள் குடும்பத்தின் மனமார்ந்த நன்றிகள்!",
+            "டிஸ்சார்ஜ் செய்யப்படும் போது எந்தவித காலதாமதமும் இல்லாமல் அனைத்து மருந்து விவரங்களையும் தமிழில் தெளிவாக விளக்கிக் கூறினர். கடலூரில் தலைசிறந்த மருத்துவமனை!"
+        ]
+    },
+    general: {
+        en: [
+            "Consulted Senior Consultant Dr. Yagneshwararaja for persistent health issues and fever. His clinical diagnosis was spot on and he took time to listen patiently with genuine empathy. Clean OPD, polite reception staff, and very reasonable pharmacy rates. Highly recommended!",
+            "Subhi Subhiksham Hospital provides top-tier general medicine and master health checkup packages in Cuddalore. No unnecessary tests prescribed. Complete transparency, same-day lab reports, and compassionate medical advice from experienced senior physicians.",
+            "Visited for my father's diabetes and BP routine evaluation. The doctor spent over twenty minutes reviewing past records and adjusting medicines with clear dietary advice. Very hygienic environment and minimal waiting time.",
+            "Wonderful healthcare facility in Cuddalore. Clean consultation rooms, polite staff, well-organized token system, and genuine medical advice. It is rare to see such ethical and patient-focused healthcare today.",
+            "Booked the Master Health Checkup package for my parents. All blood tests, ECG, chest X-ray, and ultrasound were completed in 2 hours with warm staff guiding them at every counter. Excellent value for money!",
+            "Very polite reception and token management. Despite a busy morning, doctors examine each patient without any rush. Pharmacy staff explained the dosage schedules clearly."
+        ],
+        tanglish: [
+            "General medicine consultation super experience! Dr. Yagneshwararaja sir romba patient-ah kelvi kettu nalla explain pannanga. Very transparent and friendly hospital.",
+            "Master health checkup panninom. Blood test reports same day-la kedaichudhu. Doctor consultation and pharmacy ellame well-organized!",
+            "Doctor and nursing staff ellarum humble-ah treat panranga. Cuddalore-la ithey mathiri clean and ethical hospital kedaikirathu romba periya vishayam. Must visit for any health checkup."
+        ],
+        ta: [
+            "பொது மருத்துவ ஆலோசனைக்காக சீனியர் டாக்டர் யக்னேஸ்வரராஜா அவர்களை சந்தித்தோம். மிக பொறுமையாக அனைத்து விவரங்களையும் கேட்டு சரியான மருந்து மாத்திரைகளை பரிந்துரைத்தார். மருத்துவமனையின் தூய்மையும் ஊழியர்களின் மரியாதையான அணுகுமுறையும் பாராட்டுக்குரியது.",
+            "முழு உடல் பரிசோதனை மற்றும் மருத்துவ சிகிச்சைக்கு கடலூரில் தலைசிறந்த மருத்துவமனை. நியாயமான கட்டணம், உடனடி லேப் ரிப்போர்ட் மற்றும் அனுபவம் வாய்ந்த மருத்துவர்களின் அக்கறையான வழிகாட்டுதல்.",
+            "என் தந்தைக்கு ஏற்பட்ட தொடர் காய்ச்சல் மற்றும் சர்க்கரை நோய் பரிசோதனைக்காக சென்றோம். தேவையற்ற பரிசோதனைகள் ஏதுமின்றி சரியான சிகிச்சை வழங்கி குணப்படுத்தினர். மிகவும் நன்றி!",
+            "மருத்துவர்கள் நோயாளிகளிடம் காட்டும் கனிவும், நோய் குறித்து தெளிவாக விளக்கும் விதமும் மிக அற்புதம். சுபி சுபிக்ஷம் மருத்துவமனை மருத்துவர்களுக்கும் ஊழியர்களுக்கும் எனது மனமார்ந்த நன்றிகள்!",
+            "பெற்றோருக்கு முழு உடல் பரிசோதனை (Master Health Checkup) செய்தோம். ரத்தப் பரிசோதனை, ஈசிஜி, எக்ஸ்ரே என அனைத்தும் ஒரே இடத்தில் இரண்டு மணி நேரத்தில் நேர்த்தியாக முடித்துக் கொடுத்தனர்.",
+            "மருந்தகத்தில் மருந்துகள் வாங்கும் போது காலை, மதியம், இரவு சாப்பிட வேண்டிய முறைகளை தெளிவாக எழுதி விளக்குகிறார்கள். சிறந்த பொது மருத்துவ மையம்."
+        ]
+    },
+    ortho: {
+        en: [
+            "Dr. Vijay Ananad Thambaiah performed my mother's total knee joint replacement surgery with precision. Outstanding post-operative physiotherapy and attentive nurses. She is now walking comfortably without any pain. Thank you Subhi Subhiksham!",
+            "Had severe back pain and lumbar stiffness for months. Dr. Gopalamenon's clinical expertise and guidance gave instant relief. State-of-the-art digital X-ray facilities and great rehabilitation support. Best orthopaedic centre in Cuddalore!",
+            "My son had a hairline fracture in his arm during sports. The orthopaedic team applied the cast quickly, took follow-up X-rays, and guided us on recovery. Very gentle treatment and compassionate care.",
+            "Exceptional orthopaedic care! The doctors explain the exact condition clearly with scans. Affordable surgical packages and very caring ward staff who assisted at every single step of mobilization.",
+            "Underwent arthroscopic shoulder repair here. Minimal stitches and recovery was surprisingly quick. Physiotherapist guided me through daily exercises with great patience. Highly recommended for bone & joint care.",
+            "Clean surgical recovery rooms and polite ward attenders who helped my elderly father move around safely after his hip surgery. Best orthopaedic doctors in Cuddalore."
+        ],
+        tanglish: [
+            "Knee joint pain-kaga Dr. Vijay Ananad sir-ah consult pannom. Surgery perfectly done, recovery was very fast. Best hospital in Cuddalore for orthopaedics!",
+            "Bone fracture case-ah romba careful-ah handle pannanga. Pain-free management and fast discharge. Truly impressed!",
+            "Back pain-kaga vandhen. Accurate X-ray diagnosis and physiotherapy treatment romba effective-ah irundhuchu. Highly satisfied!"
+        ],
+        ta: [
+            "எலும்பு முறிவு மற்றும் மூட்டு மாற்று அறுவை சிகிச்சைக்கு சுபி சுபிக்ஷம் மிகச் சிறந்த மருத்துவமனை. டாக்டர் விஜய் ஆனந்த் அவர்களின் கைவண்ணத்தில் மூட்டு மாற்று அறுவை சிகிச்சை செய்யப்பட்டு, பிசியோதெரபி மூலம் என் தாய் இப்போது வலியின்றி நலமாக நடக்கிறார்.",
+            "கடுமையான மூட்டு வலி மற்றும் இடுப்பு வலிக்கு டாக்டர் கோபாலமேனன் அவர்களிடம் சிகிச்சை பெற்றேன். துல்லியமான எக்ஸ்ரே பரிசோதனை மற்றும் சரியான உடற்பயிற்சி ஆலோசனைகளால் வலி முற்றிலும் நீங்கியது. சிறந்த ஆர்த்தோ மருத்துவர்கள்!",
+            "விளையாட்டின் போது என் மகனுக்கு கையில் ஏற்பட்ட எலும்பு முறிவிற்கு சிறந்த சிகிச்சை அளிக்கப்பட்டது. செவிலியர்களின் கனிவான கவனிப்பும் பிசியோதெரபி பயிற்சியும் அவனை வேகமாக குணமடையச் செய்தது.",
+            "ஆர்த்தோ அறுவை சிகிச்சையில் கடலூரில் மிகச் சிறந்த நிபுணர்கள் இங்கு உள்ளனர். குறைவான கட்டணத்தில் உயர்தர அறுவை சிகிச்சை மற்றும் கனிவான செவிலியர் பராமரிப்பு!",
+            "தோள்பட்டை தசை வலி மற்றும் எலும்பு தேய்மானத்திற்கு பிசியோதெரபி பயிற்சி மிக உதவியாக இருந்தது. பிசியோதெரபிஸ்ட் மிக பொறுமையாக பயிற்சிகளை சொல்லிக் கொடுத்தார்.",
+            "வயதான என் தாத்தாவிற்கு இடுப்பு எலும்பு சிகிச்சை மிக பாதுகாப்பாக செய்யப்பட்டது. வார்டில் இருந்த செவிலியர்கள் அவரை அன்போடு கவனித்துக் கொண்டனர். நன்றி!"
+        ]
+    },
+    maternity: {
+        en: [
+            "Delivered our baby girl safely at Subhi Subhiksham Hospitals under Dr. Subhasri. The labor room team was so encouraging and patient, ensuring a normal delivery. Spotless private rooms, 24/7 pediatric support, and warm nursing care. Best maternity hospital in Cuddalore!",
+            "Extremely satisfied with our pregnancy journey from trimester 1 to delivery. Dr. Subhasri ma'am answered every small question patiently. Ultrasound scans, diet counselling, and post-natal newborn care were handled with utmost warmth.",
+            "Best maternity and newborn care in Cuddalore! Highly sanitized labor suites, caring midwives, and continuous fetal monitoring gave us immense confidence throughout delivery. Thank you to the entire team!",
+            "Our family felt completely supported throughout our stay. Excellent lactation support, clean AC recovery rooms, and very polite housekeeping. We couldn't have chosen a better place for our baby's birth.",
+            "The pediatricians checked the newborn baby immediately after birth and administered vaccinations with care. Very peaceful and hygienic post-delivery rooms with 24-hour hot water.",
+            "Dr. Subhasri's encouraging words during labour helped my wife stay calm and positive. The nursing staff assisted her at every step with baby feeding and recovery. 5 stars!"
+        ],
+        tanglish: [
+            "My wife's delivery Subhi Subhiksham-la romba safe-ah nadanthuchu. Dr. Subhasri mam and labour room nurses treated us like family. Clean private rooms and 24/7 care!",
+            "Normal delivery try panni successfully pannanga. Maternity care and baby care ellame excellent. Cuddalore-la best maternity hospital ithu dhaan!",
+            "Pregnancy scan, doctor consultation and delivery care romba smooth-ah pochu. Sister-nga ellarum friendly and very supportive!"
+        ],
+        ta: [
+            "எங்கள் குழந்தை பிறப்பு சுபி சுபிக்ஷம் மருத்துவமனையில் டாக்டர் சுபாஸ்ரீ அவர்களின் தலைமையில் மிக பாதுகாப்பாகவும் சுகப்பிரசவமாகவும் நடைபெற்றது. பிரசவ வார்டு, செவிலியர்களின் பாசமான கவனிப்பு அனைத்தும் அருமை! கடலூரில் சிறந்த மகப்பேறு மருத்துவமனை.",
+            "கர்ப்பகால தொடக்க பரிசோதனை முதல் பிரசவம் வரை டாக்டர் சுபாஸ்ரீ மேடம் மிக அக்கறையுடன் கவனித்துக் கொண்டனர். சுத்தமான தனி ஏசி அறைகள் மற்றும் குழந்தை பராமரிப்பில் கடலூரில் மிகச் சிறந்த இடம்.",
+            "தாய்சேய் இருவருக்கும் 24 மணி நேரமும் மிகச் சிறந்த மருத்துவ கவனிப்பு கிடைத்தது. பிரசவத்தின் போது செவிலியர்கள் அளித்த தைரியமும் ஆதரவும் மறக்க முடியாதது. சுபி சுபிக்ஷம் மருத்துவமனைக்கு எங்கள் குடும்பத்தின் மனமார்ந்த நன்றிகள்!",
+            "நவீன லேபர் வார்டு, சுத்தமான சூழல் மற்றும் குழந்தைகளுக்கான உடனடி தடுப்பூசி வசதி என அனைத்தும் ஒரே இடத்தில் மிக சிறப்பாக உள்ளது.",
+            "குழந்தை பிறந்தவுடன் குழந்தை நல மருத்துவர் உடனடியாக பரிசோதித்து தாய்ப்பால் ஊட்டுவதற்கான ஆலோசனைகளை வழங்கினார். செவிலியர்களின் கனிவான ஆதரவு மனதிற்கு மிகுந்த மகிழ்ச்சி அளித்தது.",
+            "பிரசவத்திற்கு பின் தாய் மற்றும் சேய் பராமரிப்பில் மிகச்சிறந்த கவனம் செலுத்தப்பட்டது. கடலூரில் தாய்மார்கள் பாதுகாப்பாக பிரசவம் பார்க்க மிகச் சிறந்த இடம்."
+        ]
+    },
+    surgery: {
+        en: [
+            "Underwent laparoscopic gallbladder surgery under Dr. Suba Shree. Minimal keyhole incision, barely any post-op pain, and discharged comfortably within 48 hours. Advanced modular operation theatre and great nursing care!",
+            "Had laparoscopic appendix removal at Subhi Subhiksham. The surgical team and anaesthetist explained the procedure thoroughly beforehand, relieving all my anxiety. Fast recovery and fully transparent billing with no hidden costs.",
+            "Top surgical facility in Cuddalore! The post-operative wound dressing, pain management, and doctor rounds twice a day were exemplary. Very hygienic surgical ward and polite staff.",
+            "From pre-op anesthesia check to post-surgical recovery, the care was world-class. Dr. Suba Shree's surgical precision made my healing remarkably quick and smooth.",
+            "Had hernia repair surgery done by keyhole method. Almost no post-operative pain and I was back on my feet by next evening. Exceptional doctors and high-tech modular OT!",
+            "Complete peace of mind during surgery. The duty doctors checked vitals regularly throughout the night and pain relief was managed perfectly. Highly recommended surgical hospital."
+        ],
+        tanglish: [
+            "Laparoscopic surgery panninom. Minimal pain and 2 days-la discharge aagiyachu. Operation theatre facilities are high-tech and doctors are highly skilled!",
+            "Surgical care and nursing team romba friendly-ah irundhaanga. Best hospital for surgery in Cuddalore.",
+            "Appendix surgery tension illama mudinjuthu. Doctor Suba Shree mam explained everything clearly before surgery. Excellent care!"
+        ],
+        ta: [
+            "பித்தப்பை கல் பிரச்சனைக்காக டாக்டர் சுபா ஸ்ரீ அவர்களிடம் லேப்ராஸ்கோபிக் அறுவை சிகிச்சை செய்துகொண்டேன். மிகச் சிறிய தையல், குறைந்த வலி மற்றும் 2 நாட்களில் நலமுடன் வீடு திரும்பினோம். அதிநவீன அறுவை சிகிச்சை அரங்கம்!",
+            "அப்பண்டிக்ஸ் அறுவை சிகிச்சை மிக துரிதமாகவும் பாதுகாப்பாகவும் செய்யப்பட்டது. அறுவை சிகிச்சைக்கு முன் மருத்துவர்கள் பயத்தைப் போக்கி நம்பிக்கையளித்தனர். நியாயமான கட்டணம் மற்றும் சிறந்த அறுவை சிகிச்சை நிபுணர்கள்.",
+            "அறுவை சிகிச்சைக்குப் பின் செவிலியர்கள் காட்டிய அக்கறையும், சுத்தமான வார்டுகளும் என்னை விரைவாக குணமடையச் செய்தன. கடலூரில் அறுவை சிகிச்சைக்கு சிறந்த மருத்துவமனை.",
+            "மினிமல் இன்வேசிவ் லேப்ராஸ்கோபி முறையில் அறுவை சிகிச்சை செய்யப்பட்டு தழும்புகளே தெரியாத அளவிற்கு சீக்கிரம் குணமானது. நன்றி சுபி சுபிக்ஷம்!",
+            "குடலிறக்கம் (Hernia) அறுவை சிகிச்சை செய்துகொண்டேன். அறுவை சிகிச்சை முடிந்த மறுநாளே இயல்பாக நடக்க முடிந்தது. மிகச்சிறந்த அறுவை சிகிச்சை நிபுணர்கள் மற்றும் கனிவான செவிலியர்கள்!",
+            "அறுவை சிகிச்சைக் கட்டணங்கள் மிகவும் நியாயமானவை. எந்தவித மறைமுக கட்டணங்களும் இன்றி தெளிவான விளக்கம் அளித்தனர். கடலூரில் நம்பகமான மருத்துவமனை!"
+        ]
+    },
+    neuro: {
+        en: [
+            "Consulted Senior Neurologist Dr. Vinoth Kannan for chronic migraine and nerve pain. His systematic evaluation and targeted medication brought remarkable relief after suffering for over two years. Top neurology expert in Cuddalore!",
+            "My uncle suffered acute stroke symptoms and was rushed here. Dr. Vinoth Kannan and the critical care team administered immediate clot management and neuro ICU care. Today he has regained full mobility and speech. Truly life-saving medical care!",
+            "Comprehensive neuro diagnosis with advanced electroencephalography and imaging support. The doctor explains complex nerve conditions in simple terms that patients easily understand. Highly recommended!",
+            "Very impressed with the neurological rehabilitation and physiotherapy support. The doctors and therapists work patiently with stroke recovery patients to bring them back to normal life.",
+            "Consulted for severe numbness in feet and hands. The doctor identified peripheral neuropathy accurately and prescribed proper neuro-vitamins and therapy. Feeling immense relief!",
+            "Subhi Subhiksham's neuro critical care setup is on par with leading Chennai hospitals. Quick brain CT evaluation and expert medical direction save crucial minutes during stroke golden hours."
+        ],
+        tanglish: [
+            "Dr. Vinoth Kannan sir neurology-la absolute expert. Long-time migraine issue-ku accurate medicine kuduthaaru. Now feeling 100% better!",
+            "Neuro team quick action and treatment saved my relative during stroke symptoms. Best neurology hospital in Cuddalore!",
+            "Nerve weakness and dizziness problem-ku correct diagnosis panni cure pannanga. Highly experienced neuro doctor!"
+        ],
+        ta: [
+            "நரம்பியல் சிறப்பு மருத்துவர் டாக்டர் வினோத் கண்ணன் அவர்களிடம் சிகிச்சை பெற்றேன். பல வருட கடுமையான தலைவலி மற்றும் நரம்பு பிரச்சனைக்கு இப்போது முழுமையான தீர்வு கிடைத்துள்ளது. சிறந்த நியூரோ ஸ்பெஷலிஸ்ட்!",
+            "பக்கவாத அறிகுறியுடன் வந்த என் மாமாவிற்கு நரம்பியல் மருத்துவர்களும் அவசரப் பிரிவும் உடனே சிகிச்சை அளித்து பூரண குணமடையச் செய்தனர். சரியான நேரத்தில் உயிரையும் உடல் அசைவையும் மீட்டெடுத்தனர்.",
+            "நரம்பு சம்பந்தப்பட்ட பிரச்சனைகளுக்கு துல்லியமான பரிசோதனை மற்றும் கனிவான ஆலோசனை. கடலூரில் நரம்பியல் சிகிச்சைக்கு நம்பகமான ஒரே இடம் சுபி சுபிக்ஷம் மட்டுமே!",
+            "பக்கவாத பாதிப்பிற்குப் பின் பிசியோதெரபி மூலம் என் தந்தை மீண்டும் சுயமாக நடக்கத் தொடங்கியுள்ளார். மருத்துவர் வினோத் கண்ணன் மற்றும் பிசியோதெரபி குழுவிற்கு நன்றி!",
+            "கை கால் நடுக்கம் மற்றும் நரம்பு பலவீனத்திற்கு சரியான மருந்துகளை பரிந்துரைத்து குணப்படுத்தினர். மருத்துவரின் பொறுமையான பேச்சும் மருத்துவ ஆலோசனையும் மிகுந்த நம்பிக்கை அளிக்கிறது.",
+            "பக்கவாத அவசர காலங்களில் உடனடியாக சிடி ஸ்கேன் மற்றும் தீவிர சிகிச்சை அளிக்க கடலூரில் சுபி சுபிக்ஷம் மருத்துவமனையை விட சிறந்த இடம் வேறு எதுவுமில்லை."
+        ]
+    },
+    pharmacy: {
+        en: [
+            "24/7 in-house pharmacy and fully automated diagnostic lab under one roof! Always find prescribed medicines and critical injectables in stock even at 2 AM. Immense relief during emergencies in Cuddalore!",
+            "Rapid and highly accurate lab testing facility. Received complete master health checkup reports within two hours on WhatsApp. Courteous pharmacists who explain dosage schedules clearly.",
+            "High-quality digital X-ray, ECG, and blood testing with sterile collection and zero hassle. The pharmacy staff is extremely patient and quick at dispensing.",
+            "Affordable generic and branded medicines readily available 24 hours. The centralized billing and quick turnaround time make visits totally stress-free.",
+            "Hygienic blood collection area with gentle phlebotomists. My aged mother felt zero pain during sample collection. Fast and computerized report delivery!",
+            "Even specialty cardiac and neurology medications that are hard to find in regular medical shops are always in stock here. 24/7 reliability in true sense."
+        ],
+        tanglish: [
+            "24/7 pharmacy is a lifesaver in Cuddalore! All branded medicines always in stock. Late night emergency-ku medicine thedi alaia theva illa.",
+            "Lab results came very fast within 1-2 hours. Hygienic sample collection and polite pharmacy team!",
+            "Night time emergency medicine kedaikirathu romba periya vishayam. Subhi Subhiksham 24 hours pharmacy is super reliable!"
+        ],
+        ta: [
+            "24 மணி நேர மருந்தகம் மற்றும் அதிநவீன பரிசோதனை கூடம் மிக பயனுள்ளதாக உள்ளது. நள்ளிரவிலும் தேவையான அனைத்து மருந்துகளும் எளிதில் கிடைக்கின்றன. கடலூரில் மிகப்பெரிய மருத்துவ வசதி!",
+            "லேப் டெஸ்ட் முடிவுகள் மிக துரிதமாகவும் துல்லியமாகவும் வழங்கப்படுகின்றன. ரத்தப் பரிசோதனை முதல் டிஜிட்டல் எக்ஸ்ரே வரை ஒரே இடத்தில் முடிந்தது. மருந்தக ஊழியர்கள் டோசேஜ் விவரங்களை தெளிவாக விளக்குகிறார்கள்.",
+            "அவசர காலங்களில் நள்ளிரவில் மருந்துகளை தேடி அலைந்து திரிய வேண்டிய அவசியமில்லை. சுபி சுபிக்ஷம் பார்மசி எப்போது சென்றாலும் திறந்திருப்பது மிகப்பெரிய வரம்!",
+            "தரமான மருந்துகள், நியாயமான விலை மற்றும் வாட்ஸ்அப்பில் உடனுக்குடன் கிடைக்கும் லேப் ரிப்போர்ட்டுகள். மிகச் சிறந்த சேவை!",
+            "ரத்தப் பரிசோதனை செய்யும் ஊழியர்கள் முதியவர்களிடம் மிகுந்த மென்மையாகவும் பொறுமையாகவும் ரத்தம் எடுக்கிறார்கள். சுத்தமான லேப் சூழல்.",
+            "பொதுவான மெடிக்கல் கடைகளில் கிடைக்காத அரிய நரம்பியல் மற்றும் தீவிர சிகிச்சை மருந்துகளும் இங்கு எப்போதும் கிடைக்கிறது. பாராட்டுக்குரிய சேவை!"
+        ]
+    },
+    homoeopathy: {
+        en: [
+            "Consulted for chronic sinus allergies and pediatric immunity at Subhi Subhiksham Homoeopathy department. Gentle, root-cause healing with zero side effects. My child's recurring cold is completely gone now!",
+            "Experienced homoeopaths who take time to understand complete lifestyle and medical history. Very polite consultation, reasonable fees, and effective remedies for skin allergies and arthritis.",
+            "Wonderful holistic healing department within a modern multi-speciality hospital. The homoeopathic medicines brought permanent relief for my gastritis without any dependency.",
+            "Patient-centric natural healthcare! The doctors provide thorough dietary counseling alongside genuine homoeopathic formulations. Highly satisfied with our family's treatment results.",
+            "Suffered from recurring migraine and digestive acidity for years. Homoeopathy remedies worked wonders within three months. Safe and chemical-free medicine.",
+            "The doctor listens with such deep empathy and personal care. Zero side effects, pleasant-tasting pills, and real permanent results. Truly wonderful healthcare!"
+        ],
+        tanglish: [
+            "Chronic allergy problem-ku homoeopathy department-la treat pannanga. Zero side effects and complete relief kedaichudhu. Very happy!",
+            "Doctor romba detailed-ah lifestyle and symptoms kettu homoeo medicines prescribe pannanga. Great holistic approach!"
+        ],
+        ta: [
+            "சுபி சுபிக்ஷம் ஹோமியோபதி பிரிவில் நாள்பட்ட ஒவ்வாமை (அலர்ஜி) பிரச்சனைக்காக சிகிச்சை பெற்றேன். பக்கவிளைவுகள் இல்லாத பாதுகாப்பான இயற்கை மருத்துவம் மூலம் என் பிரச்சனைக்கு நிரந்தர தீர்வு கிடைத்தது!",
+            "மருத்துவர் முழுமையாக விசாரித்து உடலமைப்புக்கு ஏற்ற மிகச்சிறந்த ஹோமியோபதி மருந்துகளை வழங்கினார். என் குழந்தையின் தொடர் சளி மற்றும் ஆஸ்துமா பிரச்சனை இப்போது முற்றிலும் குணமாகிவிட்டது.",
+            "அதிநவீன மருத்துவமனையிலேயே இயற்கை ஹோமியோபதி மருத்துவப் பிரிவு இருப்பது மிகவும் சிறப்பு. எவ்வித பக்கவிளைவுகளும் இன்றி அமைதியான முறையில் நோய் குணமாகிறது.",
+            "தோல் நோய்கள் மற்றும் சைனஸ் தொந்தரவுகளுக்கு கடலூரில் சிறந்த ஹோமியோபதி மருத்துவம் இங்கு மட்டுமே கிடைக்கிறது. மருத்துவர்களுக்கு எனது மனமார்ந்த நன்றி!",
+            "நீண்ட நாட்களாக இருந்த அசிடிட்டி மற்றும் வயிற்றுப்புண் பிரச்சனைக்கு ஹோமியோபதி சிகிச்சை மூலம் முழு நிவாரணம் கிடைத்தது. பாதுகாப்பான இயற்கை மருத்துவம்!",
+            "மருத்துவர்கள் நோயாளிகளின் உணவு முறை மற்றும் பழக்கவழக்கங்களை முழுமையாக கேட்டு அதற்கேற்ப மருந்துகளை வழங்குகிறார்கள். மிகச் சிறந்த ஹோமியோபதி மையம்!"
+        ]
+    }
+};
+
+let activeCategory = 'emergency';
+let activeLanguage = 'en';
+let activeIndex = 0;
+let typewriterTimer = null;
+let currentText = '';
+
+// DOM Elements
+const reviewTextarea = document.getElementById('reviewTextarea');
+const copyGoogleBtn = document.getElementById('copyGoogleBtn');
+const copyBtnLabel = document.getElementById('copyBtnLabel');
+const voiceMicBtn = document.getElementById('voiceMicBtn');
+const shuffleBtn = document.getElementById('shuffleBtn');
+const toastBox = document.getElementById('toastBox');
+const toastMessage = document.getElementById('toastMessage');
+const saveContactBtn = document.getElementById('saveContactBtn');
+const drawerToggleBtn = document.getElementById('drawerToggleBtn');
+const drawerMenu = document.getElementById('drawerMenu');
+const catPills = document.querySelectorAll('.cat-pill');
+const langBtns = document.querySelectorAll('.lang-btn');
+const confettiCanvas = document.getElementById('confettiCanvas');
+
+// ==========================================================================
+// 30-DAY REVIEW PORTAL EXPIRY ENGINE
+// Internal calculation only - No countdown timer or clock shown to users
+// Activated: 25 Oct 2026 | Validity: 30 Days (Expires: 25 Nov 2026 23:59:59)
+// ==========================================================================
+const PORTAL_EXPIRY_DATE = new Date('2026-11-25T23:59:59+05:30');
+
+function checkPortalExpiry() {
+    const urlParams = new URLSearchParams(window.location.search);
+    // Developer testing param: ?test_expired=true allows testing expired UI anytime
+    const testExpired = urlParams.get('test_expired') === 'true' || urlParams.get('expired') === 'true';
+    const isExpired = testExpired || (new Date() > PORTAL_EXPIRY_DATE);
+
+    if (isExpired) {
+        const activeContainer = document.getElementById('portalActiveContent');
+        const expiredContainer = document.getElementById('portalExpiredCard');
+        if (activeContainer) activeContainer.style.display = 'none';
+        if (expiredContainer) expiredContainer.style.display = 'block';
+        return true;
+    }
+    return false;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 0. Check 30-day expiry state
+    if (checkPortalExpiry()) {
+        initDrawerMenu();
+        initQrModal();
+        return;
+    }
+
+    // 1. Initial Typewriter Review (Opens normally at top - auto-scroll removed per user request)
+    renderReview(false);
+
+    // Event Listeners
+    initCategoryEvents();
+    initLanguageEvents();
+    initCopyWorkflow();
+    initVoiceRecognition();
+    initVCard();
+    initDrawerMenu();
+    initQrModal();
+
+    // Editable textarea tracking
+    reviewTextarea.addEventListener('input', () => {
+        currentText = reviewTextarea.value;
+    });
+
+    shuffleBtn.addEventListener('click', () => {
+        renderReview(true);
+    });
+});
+
+function initQrModal() {
+    const qrModalBackdrop = document.getElementById('qrModalBackdrop');
+    const openQrModalBtn = document.getElementById('openQrModalBtn');
+    const closeQrModalBtn = document.getElementById('closeQrModalBtn');
+    const drawerQrLink = document.getElementById('drawerQrLink');
+    const qrShareBtn = document.getElementById('qrShareBtn');
+    const qrUrlText = document.getElementById('qrUrlText');
+
+    if (qrUrlText) {
+        qrUrlText.textContent = window.location.href;
+    }
+
+    function openQrModal() {
+        if (qrModalBackdrop) qrModalBackdrop.classList.remove('hidden');
+        if (drawerMenu) drawerMenu.classList.add('hidden');
+        const backdrop = document.getElementById('drawerBackdrop');
+        if (backdrop) backdrop.classList.add('hidden');
+    }
+
+    function closeQrModal() {
+        if (qrModalBackdrop) qrModalBackdrop.classList.add('hidden');
+    }
+
+    if (openQrModalBtn) openQrModalBtn.addEventListener('click', openQrModal);
+    if (drawerQrLink) drawerQrLink.addEventListener('click', openQrModal);
+    if (closeQrModalBtn) closeQrModalBtn.addEventListener('click', closeQrModal);
+    if (qrModalBackdrop) {
+        qrModalBackdrop.addEventListener('click', (e) => {
+            if (e.target === qrModalBackdrop) closeQrModal();
+        });
+    }
+
+    if (qrShareBtn) {
+        qrShareBtn.addEventListener('click', () => {
+            const currentUrl = window.location.href;
+            const shareText = encodeURIComponent(`Rate Subhi Subhiksham Hospitals 5 Stars on Google Reviews:\n${currentUrl}`);
+            window.open(`https://wa.me/?text=${shareText}`, '_blank');
+        });
+    }
+}
+
+function initDrawerMenu() {
+    const backdrop = document.getElementById('drawerBackdrop');
+
+    function openDrawer() {
+        drawerMenu.classList.remove('hidden');
+        if (backdrop) backdrop.classList.remove('hidden');
+        const icon = drawerToggleBtn.querySelector('i');
+        if (icon) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        }
+    }
+
+    function closeDrawer() {
+        drawerMenu.classList.add('hidden');
+        if (backdrop) backdrop.classList.add('hidden');
+        const icon = drawerToggleBtn.querySelector('i');
+        if (icon) {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    }
+
+    drawerToggleBtn.addEventListener('click', () => {
+        const isHidden = drawerMenu.classList.contains('hidden');
+        if (isHidden) {
+            openDrawer();
+        } else {
+            closeDrawer();
+        }
+    });
+
+    if (backdrop) {
+        backdrop.addEventListener('click', closeDrawer);
+    }
+
+    document.querySelectorAll('.drawer-link').forEach(link => {
+        link.addEventListener('click', closeDrawer);
+    });
+}
+
+function initCategoryEvents() {
+    catPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            const chosen = pill.dataset.category;
+            if (chosen === activeCategory) return;
+            activeCategory = chosen;
+            catPills.forEach(p => {
+                p.classList.toggle('active', p.dataset.category === activeCategory);
+            });
+            activeIndex = 0;
+            renderReview(false);
+        });
+    });
+}
+
+function initLanguageEvents() {
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (btn.dataset.lang === activeLanguage) return;
+            langBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeLanguage = btn.dataset.lang;
+            activeIndex = 0;
+            renderReview(false);
+        });
+    });
+}
+
+function getReviewsList() {
+    const categoryData = reviewsDataset[activeCategory] || reviewsDataset.emergency;
+    return categoryData[activeLanguage] || categoryData.en;
+}
+
+function renderReview(isShuffle = false) {
+    const list = getReviewsList();
+    if (!list || list.length === 0) return;
+
+    if (isShuffle) {
+        activeIndex = (activeIndex + 1) % list.length;
+    } else {
+        activeIndex = 0;
+    }
+
+    typewrite(list[activeIndex]);
+}
+
+function typewrite(targetString) {
+    if (typewriterTimer) clearTimeout(typewriterTimer);
+    currentText = targetString;
+    reviewTextarea.value = '';
+    
+    let charIdx = 0;
+    const speed = 12;
+
+    function nextChar() {
+        if (charIdx < targetString.length) {
+            reviewTextarea.value += targetString.charAt(charIdx);
+            charIdx++;
+            typewriterTimer = setTimeout(nextChar, speed);
+        }
+    }
+    nextChar();
+}
+
+// 1-TAP COPY & PASTE ON GOOGLE
+function initCopyWorkflow() {
+    copyGoogleBtn.addEventListener('click', async () => {
+        const textToCopy = reviewTextarea.value.trim() || currentText || "Outstanding healthcare at Subhi Subhiksham Hospitals Cuddalore!";
+
+        try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(textToCopy);
+            } else {
+                reviewTextarea.select();
+                document.execCommand('copy');
+            }
+        } catch (e) {
+            reviewTextarea.select();
+            document.execCommand('copy');
+        }
+
+        copyBtnLabel.textContent = "COPIED! OPENING GOOGLE...";
+        copyGoogleBtn.style.background = "#059669";
+
+        triggerConfettiBurst();
+        showToast("Review Copied! Opening Google Reviews...");
+
+        setTimeout(() => {
+            window.open(GOOGLE_REVIEW_URL, '_blank');
+            setTimeout(() => {
+                copyBtnLabel.textContent = "COPY & PASTE ON GOOGLE";
+                copyGoogleBtn.style.background = "#1d68fe";
+            }, 1800);
+        }, 700);
+    });
+}
+
+// ==========================================================================
+// VOICE RECORDER STUDIO (Accurate Real-Time Speech Recognition Engine)
+// Supports: Pure Tamil (ta-IN), English (en-IN), and Tanglish (en-IN)
+// ==========================================================================
+let recognition = null;
+let isVoiceActive = false;
+let voiceLanguage = 'ta'; // 'ta', 'en', 'tanglish'
+let voiceTimerInterval = null;
+let voiceSeconds = 0;
+let previousTextBeforeVoice = '';
+
+function initVoiceRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        voiceMicBtn.addEventListener('click', () => {
+            showToast("Microphone speech recognition not supported on this browser.");
+        });
+        return;
+    }
+
+    try {
+        recognition = new SpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.maxAlternatives = 1;
+    } catch (e) {
+        console.error('Speech recognition init error:', e);
+        return;
+    }
+
+    const vrBar = document.getElementById('voiceRecorderBar');
+    const vrTimer = document.getElementById('vrTimer');
+    const vrLiveTranscript = document.getElementById('vrLiveTranscript');
+    const vrDoneBtn = document.getElementById('vrDoneBtn');
+    const vrRetryBtn = document.getElementById('vrRetryBtn');
+    const vrCloseBtn = document.getElementById('vrCloseBtn');
+    const vrLangBtns = document.querySelectorAll('.vr-lang-btn');
+
+    function formatTime(secs) {
+        const m = String(Math.floor(secs / 60)).padStart(2, '0');
+        const s = String(secs % 60).padStart(2, '0');
+        return `${m}:${s}`;
+    }
+
+    recognition.onstart = () => {
+        isVoiceActive = true;
+        voiceMicBtn.classList.add('recording');
+        if (vrBar) vrBar.classList.remove('hidden');
+
+        // Start timer
+        clearInterval(voiceTimerInterval);
+        voiceSeconds = 0;
+        if (vrTimer) vrTimer.textContent = "00:00";
+        voiceTimerInterval = setInterval(() => {
+            voiceSeconds++;
+            if (vrTimer) vrTimer.textContent = formatTime(voiceSeconds);
+        }, 1000);
+
+        if (vrLiveTranscript) {
+            if (voiceLanguage === 'ta') {
+                vrLiveTranscript.textContent = "தயார்... தமிழில் உங்கள் அனுபவத்தைப் பேசுங்கள்...";
+            } else if (voiceLanguage === 'tanglish') {
+                vrLiveTranscript.textContent = "Ready... Speak in Tanglish (eg: hospital treatment romba super)...";
+            } else {
+                vrLiveTranscript.textContent = "Ready... Speak your experience in English...";
+            }
+        }
+    };
+
+    recognition.onresult = (e) => {
+        let interim = '';
+        let final = '';
+
+        // Iterate cleanly through all results from 0 to e.results.length
+        // This permanently fixes the Chrome duplicate loop / nonsense bug
+        for (let i = 0; i < e.results.length; ++i) {
+            const transcript = e.results[i][0].transcript;
+            if (e.results[i].isFinal) {
+                final += transcript + ' ';
+            } else {
+                interim += transcript;
+            }
+        }
+
+        const fullSpoken = (final + interim).trim();
+        if (fullSpoken) {
+            reviewTextarea.value = fullSpoken;
+            currentText = fullSpoken;
+            if (vrLiveTranscript) vrLiveTranscript.textContent = fullSpoken;
+        }
+    };
+
+    recognition.onerror = (err) => {
+        console.warn('SpeechRecognition error:', err);
+        if (err.error === 'not-allowed' || err.error === 'service-not-allowed') {
+            showToast("Microphone permission denied. Please allow mic access.");
+            stopVoice(false);
+        } else if (err.error === 'no-speech') {
+            if (vrLiveTranscript && isVoiceActive) {
+                vrLiveTranscript.textContent = "No voice heard. Please speak closer to microphone...";
+            }
+        }
+    };
+
+    recognition.onend = () => {
+        // If user hasn't explicitly stopped recording, auto-restart to prevent Chrome silence timeouts
+        if (isVoiceActive) {
+            try {
+                recognition.start();
+            } catch (err) {}
+        }
+    };
+
+    // Toggle Mic Button
+    voiceMicBtn.addEventListener('click', () => {
+        if (!isVoiceActive) {
+            // Default language based on current page language
+            const defaultLang = (activeLanguage === 'ta') ? 'ta' : 'en';
+            startVoice(defaultLang);
+        } else {
+            stopVoice(true);
+        }
+    });
+
+    // Done Button
+    if (vrDoneBtn) {
+        vrDoneBtn.addEventListener('click', () => {
+            stopVoice(true);
+        });
+    }
+
+    // Re-record Button
+    if (vrRetryBtn) {
+        vrRetryBtn.addEventListener('click', () => {
+            reviewTextarea.value = '';
+            if (vrLiveTranscript) vrLiveTranscript.textContent = "Listening again... Speak now";
+            voiceSeconds = 0;
+            if (vrTimer) vrTimer.textContent = "00:00";
+            try { recognition.stop(); } catch (e) {}
+            setTimeout(() => {
+                if (isVoiceActive) {
+                    try { recognition.start(); } catch (e) {}
+                }
+            }, 100);
+        });
+    }
+
+    // Cancel / Close Button
+    if (vrCloseBtn) {
+        vrCloseBtn.addEventListener('click', () => {
+            stopVoice(false);
+        });
+    }
+
+    // Language Selector Chips (Tamil / English / Tanglish)
+    vrLangBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const chosen = btn.dataset.vlang;
+            if (chosen === voiceLanguage) return;
+            voiceLanguage = chosen;
+            vrLangBtns.forEach(b => b.classList.toggle('active', b.dataset.vlang === voiceLanguage));
+
+            // Set SpeechRecognition language
+            // ta: 'ta-IN' (Tamil India)
+            // en: 'en-IN' (Indian English)
+            // tanglish: 'en-IN' (Transcribes Tamil in English script)
+            if (recognition) {
+                recognition.lang = (voiceLanguage === 'ta') ? 'ta-IN' : 'en-IN';
+                if (isVoiceActive) {
+                    try { recognition.stop(); } catch (e) {}
+                    setTimeout(() => {
+                        if (isVoiceActive) {
+                            try { recognition.start(); } catch (e) {}
+                        }
+                    }, 120);
+                }
+            }
+
+            if (vrLiveTranscript) {
+                if (voiceLanguage === 'ta') {
+                    vrLiveTranscript.textContent = "தமிழில் பேசத் தொடங்குங்கள்...";
+                } else if (voiceLanguage === 'tanglish') {
+                    vrLiveTranscript.textContent = "Switched to Tanglish. Speak now...";
+                } else {
+                    vrLiveTranscript.textContent = "Switched to English. Speak now...";
+                }
+            }
+        });
+    });
+}
+
+function startVoice(lang = 'ta') {
+    if (!recognition) return;
+    voiceLanguage = lang;
+
+    // Sync language chips UI
+    document.querySelectorAll('.vr-lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.vlang === voiceLanguage);
+    });
+
+    if (!isVoiceActive) {
+        previousTextBeforeVoice = reviewTextarea.value.trim();
+        // Clear textarea so spoken words are written cleanly without mixing with old review templates
+        reviewTextarea.value = '';
+        reviewTextarea.placeholder = (voiceLanguage === 'ta') 
+            ? "பேசுங்கள்... உங்கள் குரல் இங்கே நேரடியாகத் தட்டச்சாகும்..." 
+            : "Speak now... Your words will be typed here live...";
+    }
+
+    recognition.lang = (voiceLanguage === 'ta') ? 'ta-IN' : 'en-IN';
+
+    try {
+        recognition.start();
+    } catch (e) {
+        try {
+            recognition.stop();
+            setTimeout(() => recognition.start(), 150);
+        } catch (e2) {}
+    }
+}
+
+function stopVoice(save = true) {
+    isVoiceActive = false;
+    clearInterval(voiceTimerInterval);
+    if (recognition) {
+        try { recognition.stop(); } catch (err) {}
+    }
+
+    voiceMicBtn.classList.remove('recording');
+    const vrBar = document.getElementById('voiceRecorderBar');
+    if (vrBar) vrBar.classList.add('hidden');
+
+    if (!save) {
+        // Cancelled: restore old text
+        if (previousTextBeforeVoice) {
+            reviewTextarea.value = previousTextBeforeVoice;
+            currentText = previousTextBeforeVoice;
+        }
+    } else {
+        // Saved
+        const spoken = reviewTextarea.value.trim();
+        if (!spoken) {
+            if (previousTextBeforeVoice) {
+                reviewTextarea.value = previousTextBeforeVoice;
+                currentText = previousTextBeforeVoice;
+            }
+        } else {
+            showToast("✅ Spoken review saved! Ready to Copy on Google.");
+        }
+    }
+}
+
+
+// VCARD GENERATOR
+function initVCard() {
+    saveContactBtn.addEventListener('click', () => {
+        const vCardData = [
+            "BEGIN:VCARD",
+            "VERSION:3.0",
+            "N:Hospitals;Subhi Subhiksham;;;",
+            "FN:Subhi Subhiksham Hospitals Pvt Ltd",
+            "ORG:Subhi Subhiksham Hospitals Pvt Ltd",
+            "TITLE:24/7 Multi-Speciality Hospital",
+            "TEL;TYPE=WORK,VOICE:+919514299393",
+            "TEL;TYPE=CELL,VOICE:+919514299393",
+            "EMAIL;TYPE=PREF,INTERNET:subhikshamhospitals@gmail.com",
+            "URL:https://www.subhisubhikshamhospitals.com/",
+            "ADR;TYPE=WORK:;;No. 6 Lokambal Kovil Street\\, Seetharam Nagar\\, Near CK School;Pudupalayam\\, Cuddalore;Tamil Nadu;607001;India",
+            "NOTE:Subhi Subhiksham Hospitals - 24/7 Emergency & Trauma Care, ICU, Laparoscopic Surgery, Maternity, Orthopaedics, Neurology, Cardiology, and Pharmacy.",
+            "END:VCARD"
+        ].join("\r\n");
+
+        const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Subhi_Subhiksham_Hospitals.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        showToast("📇 Hospital Contact Saved to Phone!");
+    });
+}
+
+// TOAST
+let toastTimer = null;
+function showToast(msg) {
+    if (toastTimer) clearTimeout(toastTimer);
+    toastMessage.textContent = msg;
+    toastBox.classList.remove('hidden');
+    toastTimer = setTimeout(() => {
+        toastBox.classList.add('hidden');
+    }, 3200);
+}
+
+// CONFETTI
+function triggerConfettiBurst() {
+    if (!confettiCanvas) return;
+    const ctx = confettiCanvas.getContext('2d');
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+
+    const particles = [];
+    const colors = ['#16a34a', '#22c55e', '#4ade80', '#6d28d9', '#fbbf24', '#ffffff'];
+
+    for (let i = 0; i < 65; i++) {
+        particles.push({
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2,
+            w: Math.random() * 8 + 4,
+            h: Math.random() * 8 + 4,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            vx: (Math.random() - 0.5) * 14,
+            vy: (Math.random() - 0.7) * 16,
+            rot: Math.random() * 360,
+            rotSpeed: (Math.random() - 0.5) * 10,
+            alpha: 1
+        });
+    }
+
+    let frameId;
+    function draw() {
+        ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+        let active = 0;
+
+        particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.vy += 0.35;
+            p.rot += p.rotSpeed;
+            p.alpha -= 0.016;
+
+            if (p.alpha > 0) {
+                active++;
+                ctx.save();
+                ctx.translate(p.x, p.y);
+                ctx.rotate((p.rot * Math.PI) / 180);
+                ctx.globalAlpha = Math.max(0, p.alpha);
+                ctx.fillStyle = p.color;
+                ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+                ctx.restore();
+            }
+        });
+
+        if (active > 0) {
+            frameId = requestAnimationFrame(draw);
+        } else {
+            ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            cancelAnimationFrame(frameId);
+        }
+    }
+    draw();
+}
+    </script>
+</body>
+</html>

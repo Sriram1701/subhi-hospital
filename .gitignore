@@ -1,0 +1,8 @@
+# Binary tools
+cloudflared.exe
+*.exe
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
